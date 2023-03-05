@@ -16,6 +16,7 @@
 
 html {
   height: 100%;
+
 }
 
 body {
@@ -39,7 +40,7 @@ body {
   display: flex;
   margin: auto;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .logo_container {
@@ -670,7 +671,6 @@ fieldset {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .rating_container {
@@ -812,7 +812,22 @@ fieldset {
   background-color: rgba(242, 242, 242, 1);
 }
 
-.newsletter_input{
+.newsletter_input {
   border: 0;
   background-color: rgba(242, 242, 242, 1);
+}
+
+.service_background_house {
+  width: 75px;
+  background-image: url(../Images/icons/house.png);
+}
+
+.service_background_food {
+  width: 74px;
+  background-image: url(../Images/icons/food.png);
+}
+
+.service_background_gift {
+  width: 64px;
+  background-image: url(../Images/icons/gift.png);
 }
