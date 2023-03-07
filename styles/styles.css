@@ -29,6 +29,7 @@ body {
   font-weight: 400;
   font-display: swap;
   width: 1200px;
+  padding:0;
 }
 
 .main-container {
@@ -38,39 +39,53 @@ body {
 .header_container {
   width: 1200px;
   display: flex;
-  margin: auto;
-  justify-content: space-between;
+  margin: 0, auto;
+  padding:0;
   align-items: center;
 }
 
 .logo_container {
   width: 140px;
+  margin-left:70px;
+  margin-right: 28px;
+  /*лого уходит под бекграунд и не соблюдается паддинг*/
+  margin-bottom: -12px;
 }
 
 .header_navigation {
   width: 339px;
   display: flex;
+  padding:0;
+  justify-content:center;
+  margin-right: 285px;
 }
 
 .header_link_container {
-  width: 93px;
+  padding: 20px 16px 20px 16px;
 }
 
 .user_menu_container {
   width: 268px;
   display: flex;
+  align-items: center;
+  margin-right: 70px;
 }
 
 .user_menu_search_container {
   width: 44px;
+  padding:22px 12px 22px 12px;
 }
 
 .user_menu_favorite_container {
   width: 44px;
+  padding:24px 13px 23px 13px;
 }
 
 .user_menu_button_container {
   width: 160px;
+  padding-left: 20px;
+  padding-top:14px;
+  padding-bottom: 14px;
 }
 
 .header_link {
@@ -98,7 +113,9 @@ body {
 }
 
 .background_image_container {
-  background-image: url(../Images/backgrounds/index-background.jpg);
+  background-image: url(../images/design_features/welcome_footer.png), url(../images/backgrounds/index-background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .welcome_image_container {
@@ -106,6 +123,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .about_sedona_container {
@@ -113,6 +132,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin:0 auto;
+  padding:0
 }
 
 .about_sedona_title_first_line {
@@ -153,6 +174,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .city_advantages_title_container {
@@ -254,20 +276,45 @@ body {
   align-items: center;
 }
 
+.grey_box_city_service_container_house{
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/icons/house.png);
+  background-repeat: no-repeat;
+  background-position: top 81px right 162px;
+}
+
+.grey_box_city_service_container_gift{
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/icons/gift.png);
+  background-repeat: no-repeat;
+  background-position: top 81px right 162px;
+}
+
 .city_service_title_container {
   width: 230px;
-}
+ }
 
 .city_service_text_container {
   width: 230px;
 }
 
-.pale_grey_box_city_service_container {
+.pale_grey_box_city_service_container_food{
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(../images/icons/food.png);
+  background-repeat: no-repeat;
+  background-position: top 81px right 162px;
 }
 
 .hotel_searching_link_container {
@@ -281,6 +328,8 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 96px;
 }
 
 .about_sedona_title_second_line {
@@ -293,6 +342,7 @@ body {
 
 .about_sedona_title_third_line {
   width: 297px;
+
 }
 
 .about_sedona_text_third_line {
@@ -345,11 +395,13 @@ body {
 .newsletter_container {
   display: flex;
   width: 684px;
+  margin-top: 54px;
+  margin-bottom: 104px;
 }
 
 .newsletter_input {
   width: 452px;
-}
+  newsletter_container}
 
 .newsletter_button {
   width: 232px;
@@ -367,13 +419,15 @@ body {
 .footer_container {
   display: flex;
   width: 1200px;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer_social {
   width: 142px;
   display: flex;
   justify-content: space-around;
+  margin-left: 70px;
 }
 
 .footer_phone {
@@ -381,6 +435,9 @@ body {
   text-align: center;
 }
 
+.footer_academy_logo{
+  margin-right: 70px;
+}
 .footer_phone_link {
   font-family: "pt sans";
   font-weight: 400;
@@ -817,17 +874,62 @@ fieldset {
   background-color: rgba(242, 242, 242, 1);
 }
 
-.service_background_house {
-  width: 75px;
-  background-image: url(../Images/icons/house.png);
+.first_line_title{
+  margin-top:69px;
 }
 
-.service_background_food {
-  width: 74px;
-  background-image: url(../Images/icons/food.png);
+.first_line_text{
+  margin-bottom: 69px;
 }
 
-.service_background_gift {
-  width: 64px;
-  background-image: url(../Images/icons/gift.png);
+.white_advantages_title{
+  margin-top: 102px;
+}
+
+.white_advantages_text{
+  margin-bottom:102px;
+}
+
+.black_title{
+  margin-top: 112px;
+}
+
+.black_text{
+  margin-bottom: 112px;
+}
+
+.second_line_title{
+  margin-top: 64px;
+}
+
+.second_line_text{
+  margin-bottom: 64px;
+}
+
+.service_title {
+  margin-top: 183px;
+}
+
+.service_text{
+  margin-bottom: 81px;
+}
+
+.third_line_title{
+  margin-top:96px;
+  margin-bottom: 20px;
+}
+
+.third_line_text{
+  margin-top:20px;
+  margin-bottom: 54px;
+}
+
+.newsletter_title{
+  margin-top: 96px;
+  margin-bottom: 20px;
+}
+
+.newsletter_text{
+  margin-top: 20px;
+  margin-bottom: 54px;
 }
