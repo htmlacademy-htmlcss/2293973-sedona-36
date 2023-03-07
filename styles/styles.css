@@ -611,7 +611,7 @@ fieldset {
 }
 
 .hotel_image {
-  width: 300px;
+  width: 300px; /*задать отдельный див на 300 для всего*/
 }
 
 .hotel_photo {
@@ -619,7 +619,7 @@ fieldset {
 }
 
 .hotel_title {
-  width: 300px;
+  width: 340px;
   font-family: "pt sans";
   font-weight: 700;
   font-style: normal;
@@ -629,7 +629,7 @@ fieldset {
 
 .type_price_container {
   display: flex;
-  width: 300px;
+  width: 340px;
   font-family: "pt sans";
   font-weight: 400;
   font-style: normal;
@@ -640,7 +640,7 @@ fieldset {
 
 .more_favotite_container {
   display: flex;
-  width: 300px;
+  width: 340px;
   font-family: "pt sans";
   font-weight: 700;
   font-style: normal;
@@ -675,7 +675,7 @@ fieldset {
 
 .rating_container {
   display: flex;
-  width: 300px;
+  width: 340px;
   justify-content: space-between;
 }
 
