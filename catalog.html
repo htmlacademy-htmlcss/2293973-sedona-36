@@ -54,7 +54,7 @@
     <main class="main_container">
       <div class="catalog_filter_container">
         <div class="catalog_title_container">
-          <h1 class="white_title_1">Гостиницы Седоны</h1>
+          <h1 class="white_title_1 catalog_title_1">Гостиницы Седоны</h1>
         </div>
         <div class="breadcrumbs_container">
           <ol class="breadcrumbs_list">
@@ -129,7 +129,7 @@
                   </form>
                 </div>
               </div>
-              <input type="range" id="price" name="Price" min="0" max="9000" step="100">
+              <input class="price_ranger" type="range" id="price" name="Price" min="0" max="9000" step="100">
             </fieldset>
           </div>
           <div class="filter_management">
@@ -140,7 +140,7 @@
       </div>
       <div class="filter_result_options_container">
         <div class="filter_result_title">
-          <h2 class="black_title">Найдено Гостиниц: 38</h2>
+          <h2 class="black_filter_result_title">Найдено Гостиниц: 38</h2>
         </div>
         <div class="filter_result_sort">
           <select class="select_control">
@@ -161,30 +161,29 @@
       </div>
       <div class="filter_result_hotels">
         <div class="hotel_description">
-          <!--не центрируется-->
-          <!--не прорисовывается граница написать аутлайн и тип-->
-          <div class="hotel_image">
-            <img class="hotel_photo" src="images/catalog/hotel-1.jpg" alt="Звезды в конце каньона." width="300"
-              height="212">
-          </div>
-          <div class="hotel_name">
-            <p class="hotel_title">Amara Resort & Spa</p>
-          </div>
-          <div class="type_price_container">
-            <p class="type_price">Гостиница</p>
-            <p class="type_price">От 4000 ₽</p>
-          </div>
-          <div class="more_favotite_container">
-            <a class="more_link" href="">Подробнее</a>
-            <button class="favorite">В избранное</button>
-          </div>
-          <div class="rating_container">
-            <div class="rating_stars">
+            <div class="hotel_image">
+              <img class="hotel_photo" src="images/catalog/hotel-1.jpg" alt="Звезды в конце каньона." width="300"
+                height="212">
             </div>
-            <div class="rating_number">
-              <p class="rating_score">Рейтинг: 8,5</p>
+            <div class="hotel_name">
+              <p class="hotel_title">Amara Resort & Spa</p>
             </div>
-          </div>
+            <div class="type_price_container">
+              <p class="type_price">Гостиница</p>
+              <p class="type_price">От 4000 ₽</p>
+            </div>
+            <div class="more_favotite_container">
+              <a class="more_link" href="">Подробнее</a>
+              <button class="favorite">В избранное</button>
+            </div>
+            <div class="rating_container">
+              <div class="rating_stars">
+                <img class="4stars" src="images/icons/4_stars.png" alt="Четыер звезды." width="140px" height="37px">
+              </div>
+              <div class="rating_number">
+                <p class="rating_score">Рейтинг: 8,5</p>
+              </div>
+            </div>
         </div>
         <div class="hotel_description">
           <div class="hotel_image">
@@ -203,8 +202,8 @@
             <button class="favorite">В избранное</button>
           </div>
           <div class="rating_container">
-            <!--не рпидумал красивого решения-->
             <div class="rating_stars">
+              <img class="4stars" src="images/icons/4_stars.png" alt="Четыер звезды." width="140px" height="37px">
             </div>
             <div class="rating_number">
               <p class="rating_score">Рейтинг: 9,2</p>
@@ -228,6 +227,7 @@
             <button class="favorite">В избранное</button>
           </div>
           <div class="rating_container">
+            <img class="4stars" src="images/icons/3_stars.png" alt="Четыер звезды." width="140px" height="37px">
             <div class="rating_stars">
             </div>
             <div class="rating_number">
@@ -253,6 +253,7 @@
           </div>
           <div class="rating_container">
             <div class="rating_stars">
+              <img class="4stars" src="images/icons/2_stars.png" alt="Четыер звезды." width="140px" height="37px">
             </div>
             <div class="rating_number">
               <p class="rating_score">Рейтинг: 5,0</p>
@@ -294,10 +295,10 @@
       </div>
       <div class="regular_newsletter_container">
         <div class="regular_newsletter_about_sedona_title">
-          <h2 class="regular_newsletter_title_2">Подпишитесь на рассылку</h2>
+          <h2 class="regular_newsletter_title_2 newsletter_title">Подпишитесь на рассылку</h2>
         </div>
         <div class="regular_newsletter_about_sedona_text">
-          <p class="regular_newsletter_regular_text">Только полезная информация и никакого спама, честное бойскаутское!
+          <p class="regular_newsletter_regular_text newsletter_text">Только полезная информация и никакого спама, честное бойскаутское!
           </p>
         </div>
         <div class="regular_newsletter_newsletter_container">
