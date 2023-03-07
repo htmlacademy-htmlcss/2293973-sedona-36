@@ -359,7 +359,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../Images/backgrounds/subscribe.jpg);
+  background-image: url(../images/backgrounds/subscribe.jpg);
   background-repeat: no-repeat;
 }
 
@@ -453,7 +453,7 @@ body {
 
 .catalog_filter_container {
   width: 1200px;
-  background-image: url(../Images/backgrounds/filter.jpg);
+  background-image: url(../images/backgrounds/filter.jpg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -493,7 +493,7 @@ body {
 .breadcrumbs_item_1 {
   width: 13px;
   height: 20px;
-  background-image: url(../Images/icons/main.png);
+  background-image: url(../images/icons/main.png);
   background-repeat: no-repeat;
   margin-right: 11px;
 }
@@ -689,7 +689,7 @@ fieldset {
   height: 48px;
   border-color: rgba(0, 0, 0, 1);
   border-radius: 4px;
-  background-image: url(../Images/icons/plate.png);
+  background-image: url(../images/icons/plate.png);
   background-repeat: no-repeat;
   background-position: center;
   border-style: solid;
@@ -700,7 +700,7 @@ fieldset {
   height: 48px;
   border-color: rgba(229, 229, 229, 1);
   border-radius: 4px;
-  background-image: url(../Images/icons/picture.png);
+  background-image: url(../images/icons/picture.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -710,7 +710,7 @@ fieldset {
   height: 48px;
   border-color: rgba(229, 229, 229, 1);
   border-radius: 4px;
-  background-image: url(../Images/icons/list.png);
+  background-image: url(../images/icons/list.png);
   background-repeat: no-repeat;
   background-position: center;
 }
