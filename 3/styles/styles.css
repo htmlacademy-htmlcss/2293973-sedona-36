@@ -880,6 +880,8 @@ fieldset {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding-top: 9px;
+  padding-bottom: 8px;
 }
 
 .pagination_container {
