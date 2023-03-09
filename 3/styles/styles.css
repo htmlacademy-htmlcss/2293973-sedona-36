@@ -1,0 +1,1091 @@
+@font-face {
+  font-family: "pt sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "pt sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2);
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "pt sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  width: 1200px;
+  padding: 0;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.header_container {
+  width: 1200px;
+  display: flex;
+  margin: 0, auto;
+  padding: 0;
+  align-items: center;
+}
+
+.logo_container {
+  width: 140px;
+  margin-left: 70px;
+  margin-right: 28px;
+  /*лого уходит под бекграунд и не соблюдается паддинг*/
+  margin-bottom: -12px;
+}
+
+.header_navigation {
+  width: 339px;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin-right: 285px;
+}
+
+.header_link_container {
+  padding: 20px 16px 20px 16px;
+}
+
+.user_menu_container {
+  width: 268px;
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.user_menu_search_container {
+  width: 44px;
+  padding: 22px 12px 22px 12px;
+}
+
+.user_menu_favorite_container {
+  width: 44px;
+  padding: 24px 13px 23px 13px;
+}
+
+.user_menu_link_container {
+  width: 160px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.header_link {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.want_it {
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(117, 97, 87, 1);
+  border: 0;
+  width: 160px;
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  text-align: center;
+  align-content: center;
+}
+
+.background_image_container {
+  background-image: url(../images/design_features/welcome_footer.png), url(../images/backgrounds/index-background.jpg);
+  background-color: rgba(130, 179, 211, 1);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 1);
+}
+
+.welcome_image_container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+.about_sedona_container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0
+}
+
+.about_sedona_title_first_line {
+  width: 620px;
+}
+
+.title_2 {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about_sedona_text_first_line {
+  width: 651px;
+}
+
+.regular_text {
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center
+}
+
+.city_advantages_first_line_container {
+  display: flex;
+  width: 1200px;
+}
+
+.blue_box_advantages_description_container {
+  width: 400px;
+  background-color: rgba(130, 179, 211, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.city_advantages_title_container {
+  width: 175px;
+  text-align: center;
+}
+
+.white_advantages_title {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+
+.city_advantages_text_container {
+  width: 230px;
+  text-align: center;
+}
+
+.white_advantages_text {
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.city_advantages_first_line_image_container {
+  width: 800px;
+}
+
+.city_advantages_second_line_container {
+  display: flex;
+  width: 1200px;
+}
+
+.pale_grey_box_advantages_description_container {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.black_title {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+.black_text {
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.grey_box_advantages_description_container {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city_advantages_third_line_container {
+  display: flex;
+  width: 1200px;
+}
+
+.advantages_image {
+  height: 100%
+}
+
+.city_service_container {
+  display: flex;
+  width: 1200px;
+}
+
+.grey_box_city_service_container {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grey_box_city_service_container_house {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/icons/house.png);
+  color: rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-position: top 81px right 162px;
+}
+
+.grey_box_city_service_container_gift {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/icons/gift.png);
+  color: rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-position: top 81px right 162px;
+}
+
+.city_service_title_container {
+  width: 230px;
+}
+
+.city_service_text_container {
+  width: 230px;
+}
+
+.pale_grey_box_city_service_container_food {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/icons/food.png);
+  color: rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-position: top 81px right 162px;
+}
+
+.hotel_searching_link_container {
+  width: 376px;
+  text-align: center;
+  background-color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 96px;
+}
+
+.about_sedona_title_second_line {
+  width: 505px;
+}
+
+.about_sedona_text_second_line {
+  width: 490px;
+}
+
+.about_sedona_title_third_line {
+  width: 297px;
+
+}
+
+.about_sedona_text_third_line {
+  width: 592px;
+}
+
+.hotel_searching_link {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.main_newsletter_container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/backgrounds/subscribe.jpg);
+  background-color: rgba(130, 179, 211, 1);
+  background-repeat: no-repeat;
+}
+
+.about_sedona_title_newsletter {
+  width: 404px;
+}
+
+.white_title_2 {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+
+.about_sedona_text_newsletter {
+  width: 475px;
+}
+
+.white_regular_text {
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.newsletter_container {
+  display: flex;
+  width: 684px;
+  margin-top: 54px;
+  margin-bottom: 104px;
+}
+
+.newsletter_input {
+  width: 452px;
+}
+
+.newsletter_button {
+  width: 232px;
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.footer_container {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: max-content max-content max-content;
+  width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  justify-items: center;
+}
+
+.footer_social {
+  grid-column: 1 / 2;
+  width: 142px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 70px;
+}
+
+.footer_phone {
+  grid-column: 2 / 3;
+  width: 331px;
+  text-align: center;
+
+}
+
+.footer_academy_logo {
+  grid-column: 3/4;
+  margin-right: 70px;
+}
+
+.footer_phone_link {
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.catalog_filter_container {
+  width: 1200px;
+  background-image: url(../images/backgrounds/filter.jpg);
+  background-color: rgba(130, 179, 211, 1);
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog_title_container {
+  width: 690px;
+}
+
+.white_title_1 {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 78px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumbs_container {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 70px;
+  padding: 0;
+}
+
+.breadcrumbs_list {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 1);
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+}
+
+.breadcrumbs_item_1 {
+  width: 13px;
+  height: 20px;
+  background-image: url(../images/icons/main.png);
+  background-repeat: no-repeat;
+  margin-right: 11px;
+}
+
+.breadcrumbs_item_2 {
+  width: 93px;
+  background-image: url(../images/icons/breadcrumbs.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+.breadcrumbs_link {
+  width: 13px;
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.filter_options_container {
+  display: flex;
+  width: 1200px;
+  color: rgba(255, 255, 255, 1);
+  padding: 0;
+  margin-left: 70px;
+}
+
+.filter_options_form {
+  display: flex;
+}
+
+.filter_infrastructure {
+  width: 150px;
+  padding: 0;
+  margin-right: 70px;
+}
+
+.filter_name {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0;
+}
+
+.filter_list {
+  list-style-type: none;
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 0;
+  margin-top: 32px;
+  margin-bottom: 73px;
+}
+
+.filter_item {
+  margin-bottom: 16px;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.filter_house_type {
+  width: 150px;
+  margin-right: 140px;
+}
+
+.filter_price_range {
+  width: 288px;
+  margin-right: 70px;
+}
+
+.filter_price_range .filter_name {
+  margin-bottom: 32px;
+}
+
+.price_inputs {
+  display: flex;
+  width: 288px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.min_price_input {
+  width: 143px;
+  height: 48px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.max_price_input {
+  width: 143px;
+  height: 48px;
+}
+
+.filter_management {
+  width: 191px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price_ranger {
+  display: flex;
+}
+
+.accept_button {
+  width: 191;
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 8px 50px;
+  margin-bottom: 32px;
+  margin-top: 56px;
+}
+
+.decline_button {
+  width: 191;
+  background-color: rgba(130, 179, 211, 0);
+  color: rgba(255, 255, 255, 1);
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 8px 50px;
+}
+
+.filter_result_options_container {
+  display: flex;
+  margin: auto;
+  width: 1200px;
+  background-color: rgba(255, 255, 255, 1);
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.black_filter_result_title {
+  width: 338px;
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-right: 200px;
+}
+
+.select_control {
+  width: 292px;
+  height: 49px;
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 1);
+  margin-right: 70px;
+  border-color: rgba(229, 229, 229, 1);
+  border-radius: 4px;
+}
+
+.filter_result_view {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+  margin-right: 70px;
+}
+
+.filter_result_view_plate {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(0, 0, 0, 1);
+  border-radius: 4px;
+  background-image: url(../images/icons/plate.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: solid;
+  margin-right: 8px;
+
+}
+
+.filter_result_view_picture {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(229, 229, 229, 1);
+  border-radius: 4px;
+  background-image: url(../images/icons/picture.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: solid;
+  margin-right: 8px;
+}
+
+.filter_result_view_list {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(229, 229, 229, 1);
+  border-radius: 4px;
+  background-image: url(../images/icons/list.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: solid;
+}
+
+.plate_link {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.picture_link {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.list_link {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.filter_result_hotels {
+  display: flex;
+  margin: auto;
+  width: 1060px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel_description {
+  width: 340px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgba(230, 230, 230, 1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hotel_description:nth-last-child() {
+  margin-bottom: 0;
+}
+
+.hotel_image {
+  width: 300px;
+}
+
+.hotel_photo {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.hotel_title {
+  width: 300px;
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.type_price {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.type_price_container {
+  display: flex;
+  width: 300px;
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.more_favotite_container {
+  display: flex;
+  width: 300px;
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.more_link {
+  width: 140px;
+  background-color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+}
+
+.favorite {
+  width: 140px;
+  height: 36px;
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-decoration: none;
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+}
+
+.rating_container {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+
+.rating_score {
+  width: 140px;
+  background-color: rgba(242, 242, 242, 1);
+  text-align: center;
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination_container {
+  width: 1200px;
+  display: flex;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.current_page {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(242, 242, 242, 1);
+  margin-left: 70px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current_page_link {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.pagination_page {
+  width: 60px;
+  background-color: rgba(130, 179, 211, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-right: 8px;
+}
+
+.next_page_link {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  display: block;
+}
+
+.pagination_more {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.more_page_link {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-right: 8px;
+}
+
+.regular_newsletter_container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.regular_newsletter_about_sedona_title {
+  width: 404px;
+}
+
+.regular_newsletter_title_2 {
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.regular_newsletter_about_sedona_text {
+  width: 475px;
+}
+
+.regular_newsletter_regular_text {
+  font-family: "pt sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.regular_newsletter_newsletter_container {
+  display: flex;
+  width: 684px;
+  margin-top: 54px;
+  margin-bottom: 104px;
+}
+
+.regular_newsletter_newsletter_input {
+  width: 452px;
+}
+
+.regular_newsletter_newsletter_button {
+  width: 232px;
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "pt sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+}
+
+.regular_newsletter_newsletter_input {
+  border: 0;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.newsletter_input {
+  border: 0;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.first_line_title {
+  margin-top: 69px;
+}
+
+.first_line_text {
+  margin-bottom: 69px;
+}
+
+.white_advantages_title {
+  margin-top: 102px;
+}
+
+.white_advantages_text {
+  margin-bottom: 102px;
+}
+
+.black_title {
+  margin-top: 112px;
+}
+
+.black_text {
+  margin-bottom: 112px;
+}
+
+.second_line_title {
+  margin-top: 64px;
+}
+
+.second_line_text {
+  margin-bottom: 64px;
+}
+
+.service_title {
+  margin-top: 183px;
+}
+
+.service_text {
+  margin-bottom: 81px;
+}
+
+.third_line_title {
+  margin-top: 96px;
+  margin-bottom: 20px;
+}
+
+.third_line_text {
+  margin-top: 20px;
+  margin-bottom: 54px;
+}
+
+.newsletter_title {
+  margin-top: 96px;
+  margin-bottom: 20px;
+}
+
+.newsletter_text {
+  margin-top: 20px;
+  margin-bottom: 54px;
+}
+
+.catalog_title_1 {
+  margin-left: 70px;
+  margin-top: 35px;
+  margin-bottom: 8px;
+}
