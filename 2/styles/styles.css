@@ -81,7 +81,7 @@ body {
   padding: 24px 13px 23px 13px;
 }
 
-.user_menu_button_container {
+.user_menu_link_container {
   width: 160px;
   padding-left: 20px;
   padding-top: 14px;
@@ -99,23 +99,29 @@ body {
 }
 
 .want_it {
+  display:block;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(117, 97, 87, 1);
-  width: 160px;
-  height: 36px;
   border: 0;
+  width: 160px;
   font-family: "pt sans";
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  text-align: center;
+  align-content: center ;
 }
 
 .background_image_container {
   background-image: url(../images/design_features/welcome_footer.png), url(../images/backgrounds/index-background.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 1);
 }
 
 .welcome_image_container {
@@ -283,6 +289,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url(../images/icons/house.png);
+  color: rgba(0, 0, 0, 1);
   background-repeat: no-repeat;
   background-position: top 81px right 162px;
 }
@@ -294,6 +301,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url(../images/icons/gift.png);
+  color: rgba(0, 0, 0, 1);
   background-repeat: no-repeat;
   background-position: top 81px right 162px;
 }
@@ -313,6 +321,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url(../images/icons/food.png);
+  color: rgba(255, 255, 255, 1);
   background-repeat: no-repeat;
   background-position: top 81px right 162px;
 }
@@ -360,6 +369,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url(../images/backgrounds/subscribe.jpg);
+  color: rgba(255, 255, 255, 1);
   background-repeat: no-repeat;
 }
 
@@ -455,6 +465,7 @@ body {
   width: 1200px;
   background-image: url(../images/backgrounds/filter.jpg);
   background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
 }
@@ -668,23 +679,11 @@ fieldset {
 .filter_result_view {
   display: flex;
   width: 160px;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-right: 70px;
 }
 
 .filter_result_view_plate {
-  width: 48px;
-}
-
-.filter_result_view_picture {
-  width: 48px;
-}
-
-.filter_result_view_list {
-  width: 48px;
-}
-
-.plate_button {
   width: 48px;
   height: 48px;
   border-color: rgba(0, 0, 0, 1);
@@ -693,9 +692,11 @@ fieldset {
   background-repeat: no-repeat;
   background-position: center;
   border-style: solid;
+  margin-right: 8px;
+
 }
 
-.picture_button {
+.filter_result_view_picture {
   width: 48px;
   height: 48px;
   border-color: rgba(229, 229, 229, 1);
@@ -703,9 +704,11 @@ fieldset {
   background-image: url(../images/icons/picture.png);
   background-repeat: no-repeat;
   background-position: center;
+  border-style: solid;
+  margin-right: 8px;
 }
 
-.list_button {
+.filter_result_view_list {
   width: 48px;
   height: 48px;
   border-color: rgba(229, 229, 229, 1);
@@ -713,6 +716,25 @@ fieldset {
   background-image: url(../images/icons/list.png);
   background-repeat: no-repeat;
   background-position: center;
+  border-style: solid;
+}
+
+.plate_link {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.picture_link {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.list_link {
+  width: 48px;
+  height: 48px;
+  display: block;
 }
 
 .filter_result_hotels {
