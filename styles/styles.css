@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/ptsans-400.woff2);
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url(../fonts/ptsans-700.woff2);
@@ -16,7 +16,6 @@
 
 html {
   height: 100%;
-
 }
 
 body {
@@ -99,7 +98,7 @@ body {
 }
 
 .want_it {
-  display:block;
+  display: block;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(117, 97, 87, 1);
   border: 0;
@@ -114,11 +113,12 @@ body {
   padding-bottom: 8px;
   border-radius: 4px;
   text-align: center;
-  align-content: center ;
+  align-content: center;
 }
 
 .background_image_container {
   background-image: url(../images/design_features/welcome_footer.png), url(../images/backgrounds/index-background.jpg);
+  background-color: rgba(130, 179, 211, 1);
   background-position: bottom;
   background-repeat: no-repeat;
   color: rgba(255, 255, 255, 1);
@@ -369,7 +369,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url(../images/backgrounds/subscribe.jpg);
-  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
   background-repeat: no-repeat;
 }
 
@@ -427,14 +427,18 @@ body {
 }
 
 .footer_container {
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: max-content max-content max-content;
   width: 1200px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  justify-items: center;
 }
 
 .footer_social {
+  grid-column: 1 / 2;
   width: 142px;
   display: flex;
   justify-content: space-around;
@@ -442,11 +446,14 @@ body {
 }
 
 .footer_phone {
+  grid-column: 2 / 3;
   width: 331px;
   text-align: center;
+
 }
 
 .footer_academy_logo {
+  grid-column: 3/4;
   margin-right: 70px;
 }
 
@@ -464,6 +471,7 @@ body {
 .catalog_filter_container {
   width: 1200px;
   background-image: url(../images/backgrounds/filter.jpg);
+  background-color: rgba(130, 179, 211, 1);
   background-repeat: no-repeat;
   color: rgba(255, 255, 255, 1);
   display: flex;
@@ -532,8 +540,12 @@ body {
   display: flex;
   width: 1200px;
   color: rgba(255, 255, 255, 1);
-  padding:0;
+  padding: 0;
   margin-left: 70px;
+}
+
+.filter_options_form {
+  display: flex;
 }
 
 .filter_infrastructure {
@@ -563,9 +575,10 @@ body {
   margin-bottom: 73px;
 }
 
-.filter_item{
+.filter_item {
   margin-bottom: 16px;
 }
+
 fieldset {
   border: 0;
   padding: 0;
@@ -573,40 +586,42 @@ fieldset {
 
 .filter_house_type {
   width: 150px;
-    margin-right: 140px;
+  margin-right: 140px;
 }
 
 .filter_price_range {
   width: 288px;
   margin-right: 70px;
 }
-.filter_price_range .filter_name{
+
+.filter_price_range .filter_name {
   margin-bottom: 32px;
 }
 
 .price_inputs {
   display: flex;
   width: 288px;
-  border-radius:0px 4px 4px 0px;
+  border-radius: 0px 4px 4px 0px;
 }
 
-.min_price_input{
+.min_price_input {
   width: 143px;
-  height:48px;
+  height: 48px;
   border-radius: 4px 0px 0px 4px;
 }
 
-.max_price_input{
+.max_price_input {
   width: 143px;
-  height:48px;
+  height: 48px;
 }
+
 .filter_management {
   width: 191px;
   display: flex;
   flex-direction: column;
 }
 
-.price_ranger{
+.price_ranger {
   display: flex;
 }
 
@@ -650,7 +665,8 @@ fieldset {
   margin-bottom: 40px;
   padding: 0;
 }
-.black_filter_result_title{
+
+.black_filter_result_title {
   width: 338px;
   font-family: "pt sans";
   font-weight: 700;
@@ -758,7 +774,7 @@ fieldset {
 }
 
 .hotel_description:nth-last-child() {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .hotel_image {
@@ -767,7 +783,7 @@ margin-bottom: 0;
 
 .hotel_photo {
   display: block;
-  margin-top:20px;
+  margin-top: 20px;
   margin-bottom: 16px;
 }
 
@@ -782,7 +798,7 @@ margin-bottom: 0;
   margin-bottom: 16px;
 }
 
-.type_price{
+.type_price {
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -864,6 +880,8 @@ margin-bottom: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding-top: 9px;
+  padding-bottom: 8px;
 }
 
 .pagination_container {
@@ -875,7 +893,7 @@ margin-bottom: 0;
 
 .current_page {
   width: 60px;
-  height:60px;
+  height: 60px;
   background-color: rgba(242, 242, 242, 1);
   margin-left: 70px;
   margin-right: 8px;
@@ -901,7 +919,7 @@ margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height:60px;
+  height: 60px;
   margin-right: 8px;
 }
 
@@ -922,7 +940,7 @@ margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height:60px;
+  height: 60px;
 }
 
 .more_page_link {
@@ -1068,7 +1086,7 @@ margin-bottom: 0;
   margin-bottom: 54px;
 }
 
-.catalog_title_1{
+.catalog_title_1 {
   margin-left: 70px;
   margin-top: 35px;
   margin-bottom: 8px;

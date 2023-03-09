@@ -28,7 +28,7 @@
               </a>
             </div>
             <div class="header_link_container">
-              <a class="header_link" href="#">
+              <a class="header_link" href="catalog.html">
                 Гостиницы
               </a>
             </div>
@@ -70,68 +70,70 @@
           </ol>
         </div>
         <div class="filter_options_container">
-          <div class="filter_infrastructure">
-            <fieldset>
-              <legend class="filter_name">Инфраструктура</legend>
-              <ul class="filter_list">
-                <li class="filter_item">
-                  <label class="choosen_product_filter_choose">
-                    <input class="choosen_product_filter_choose_input" type="checkbox" checked="checked">Бассейн
-                  </label>
-                </li>
-                <li class="filter_item">
-                  <label class="choosen_product_filter_choose">
-                    <input class="choosen_product_filter_choose_input" type="checkbox" checked="checked">Парковка
-                  </label>
-                </li>
-                <li class="filter_item">
-                  <label class="choosen_product_filter_choose">
-                    <input class="choosen_product_filter_choose_input" type="checkbox">Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="filter_house_type">
-            <fieldset>
-              <legend class="filter_name">Тип Жилья</legend>
-              <ul class="filter_list">
-                <li class="filter_item">
-                  <label class="choosen_product_filter_choose">
-                    <input class="choosen_product_filter_choose_input" type="radio" checked="checked">Гостиница
-                  </label>
-                </li>
-                <li class="filter_item">
-                  <label class="choosen_product_filter_choose">
-                    <input class="choosen_product_filter_choose_input" type="radio">Мотель
-                  </label>
-                </li>
-                <li class="filter_item">
-                  <label class="choosen_product_filter_choose">
-                    <input class="choosen_product_filter_choose_input" type="radio">Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="filter_price_range">
-            <fieldset>
-              <legend class="filter_name">Стоимость, ₽:</legend>
-              <div class="price_inputs">
-                <div class="min_price">
-                  <form class="min_price_form" action="#" method="get">
-                    <input class="min_price_input" type="text" name="min_price">
-                  </form>
+          <form class="filter_options_form">
+            <div class="filter_infrastructure">
+              <fieldset>
+                <legend class="filter_name">Инфраструктура</legend>
+                <ul class="filter_list">
+                  <li class="filter_item">
+                    <label class="choosen_product_filter_choose">
+                      <input class="choosen_product_filter_choose_input" type="checkbox" checked="checked">Бассейн
+                    </label>
+                  </li>
+                  <li class="filter_item">
+                    <label class="choosen_product_filter_choose">
+                      <input class="choosen_product_filter_choose_input" type="checkbox" checked="checked">Парковка
+                    </label>
+                  </li>
+                  <li class="filter_item">
+                    <label class="choosen_product_filter_choose">
+                      <input class="choosen_product_filter_choose_input" type="checkbox">Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="filter_house_type">
+              <fieldset>
+                <legend class="filter_name">Тип Жилья</legend>
+                <ul class="filter_list">
+                  <li class="filter_item">
+                    <label class="choosen_product_filter_choose">
+                      <input class="choosen_product_filter_choose_input" type="radio" checked="checked">Гостиница
+                    </label>
+                  </li>
+                  <li class="filter_item">
+                    <label class="choosen_product_filter_choose">
+                      <input class="choosen_product_filter_choose_input" type="radio">Мотель
+                    </label>
+                  </li>
+                  <li class="filter_item">
+                    <label class="choosen_product_filter_choose">
+                      <input class="choosen_product_filter_choose_input" type="radio">Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="filter_price_range">
+              <fieldset>
+                <legend class="filter_name">Стоимость, ₽:</legend>
+                <div class="price_inputs">
+                  <div class="min_price">
+                    <form class="min_price_form" action="#" method="get">
+                      <input class="min_price_input" type="text" name="min_price">
+                    </form>
+                  </div>
+                  <div class="max_price">
+                    <form class="max_price_form" action="#" method="get">
+                      <input class="max_price_input" type="text" name="max_price">
+                    </form>
+                  </div>
                 </div>
-                <div class="max_price">
-                  <form class="max_price_form" action="#" method="get">
-                    <input class="max_price_input" type="text" name="max_price">
-                  </form>
-                </div>
-              </div>
-              <input class="price_ranger" type="range" id="price" name="Price" min="0" max="9000" step="100">
-            </fieldset>
-          </div>
+                <input class="price_ranger" type="range" id="price" name="Price" min="0" max="9000" step="100">
+              </fieldset>
+            </div>
+          </form>
           <div class="filter_management">
             <button class="accept_button" type="submit">Применить</button>
             <button class="decline_button" type="reset">Сбросить</button>
@@ -161,29 +163,29 @@
       </div>
       <div class="filter_result_hotels">
         <div class="hotel_description">
-            <div class="hotel_image">
-              <img class="hotel_photo" src="images/catalog/hotel-1.jpg" alt="Звезды в конце каньона." width="300"
-                height="212">
+          <div class="hotel_image">
+            <img class="hotel_photo" src="images/catalog/hotel-1.jpg" alt="Звезды в конце каньона." width="300"
+              height="212">
+          </div>
+          <div class="hotel_name">
+            <p class="hotel_title">Amara Resort & Spa</p>
+          </div>
+          <div class="type_price_container">
+            <p class="type_price">Гостиница</p>
+            <p class="type_price">От 4000 ₽</p>
+          </div>
+          <div class="more_favotite_container">
+            <a class="more_link" href="">Подробнее</a>
+            <button class="favorite">В избранное</button>
+          </div>
+          <div class="rating_container">
+            <div class="rating_stars">
+              <img class="4stars" src="images/icons/4_stars.png" alt="Четыре звезды." width="140" height="37">
             </div>
-            <div class="hotel_name">
-              <p class="hotel_title">Amara Resort & Spa</p>
+            <div class="rating_number">
+              <p class="rating_score">Рейтинг: 8,5</p>
             </div>
-            <div class="type_price_container">
-              <p class="type_price">Гостиница</p>
-              <p class="type_price">От 4000 ₽</p>
-            </div>
-            <div class="more_favotite_container">
-              <a class="more_link" href="">Подробнее</a>
-              <button class="favorite">В избранное</button>
-            </div>
-            <div class="rating_container">
-              <div class="rating_stars">
-                <img class="4stars" src="images/icons/4_stars.png" alt="Четыре звезды." width="140" height="37">
-              </div>
-              <div class="rating_number">
-                <p class="rating_score">Рейтинг: 8,5</p>
-              </div>
-            </div>
+          </div>
         </div>
         <div class="hotel_description">
           <div class="hotel_image">
@@ -298,7 +300,8 @@
           <h2 class="regular_newsletter_title_2 newsletter_title">Подпишитесь на рассылку</h2>
         </div>
         <div class="regular_newsletter_about_sedona_text">
-          <p class="regular_newsletter_regular_text newsletter_text">Только полезная информация и никакого спама, честное бойскаутское!
+          <p class="regular_newsletter_regular_text newsletter_text">Только полезная информация и никакого спама,
+            честное бойскаутское!
           </p>
         </div>
         <div class="regular_newsletter_newsletter_container">
