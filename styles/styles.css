@@ -1056,6 +1056,9 @@ fieldset {
   border-color: rgba(104, 162, 202, 1);
   border-radius: 4px;
   border-style: solid;
+  outline: 2px;
+  outline-style: solid;
+  outline-color: rgba(104, 162, 202, 1);
 }
 
 .filter_result_action:active{
