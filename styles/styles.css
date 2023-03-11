@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "pt sans", sans-serif;
+  font-family: "pt sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2);
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "pt sans", sans-serif;
+  font-family: "pt sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2);
+  src: url(../fonts/ptsans-700.woff2) format("woff2");;
   font-display: swap;
 }
 
@@ -23,14 +23,17 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   width: 1200px;
   padding: 0;
 }
-
+body:focus{
+border:none;
+outline: none;       ;
+}
 .main-container {
   flex-grow: 1;
 }
@@ -88,7 +91,7 @@ body {
 }
 
 .header_link {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -99,21 +102,213 @@ body {
 
 .want_it {
   display: block;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(117, 97, 87, 1);
-  border: 0;
   width: 160px;
-  font-family: "pt sans";
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
+
+}
+
+.brown_button{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(117, 97, 87, 1);
+  border: none;
   text-transform: uppercase;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 4px;
   text-align: center;
-  align-content: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.brown_button:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(97, 80, 72, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.brown_button:focus{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(97, 80, 72, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.brown_button:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(117, 97, 87, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.brown_button:disabled{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(229, 229, 229, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.blue_button{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.blue_button:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(104, 162, 202, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.blue_button:focus{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(104, 162, 202, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.blue_button:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(130, 179, 211, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.blue_button:disabled{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(229, 229, 229, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.green_button{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(125, 181, 79, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.green_button:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(108, 158, 66, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.green_button:focus{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(108, 158, 66, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.green_button:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(125, 181, 79, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.green_button:disabled{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(229, 229, 229, 1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.transparent_button{
+  color: rgba(255, 255, 255, 0.1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.transparent_button:hover{
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.transparent_button:focus{
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: 3px;
+  outline-color: rgba(131, 179, 211, 1);
+  border-color: rgba(131, 179, 211, 1);
+  border: 3px;
+}
+
+.transparent_button:active{
+  color: rgba(255, 255, 255, 0.3);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.transparent_button:disabled{
+  color: rgba(255, 255, 255, 0.1);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 .background_image_container {
@@ -147,7 +342,7 @@ body {
 }
 
 .title_2 {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -161,7 +356,7 @@ body {
 }
 
 .regular_text {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
@@ -189,7 +384,7 @@ body {
 }
 
 .white_advantages_title {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -205,7 +400,7 @@ body {
 }
 
 .white_advantages_text {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -232,7 +427,7 @@ body {
 }
 
 .black_title {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -243,7 +438,7 @@ body {
 }
 
 .black_text {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -329,16 +524,22 @@ body {
 .hotel_searching_link_container {
   width: 376px;
   text-align: center;
-  background-color: rgba(117, 97, 87, 1);
+
+  margin-top: 20px;
+  margin-bottom: 96px;
+}
+
+.hotel_searching_link {
+  width: 376px;
   color: rgba(255, 255, 255, 1);
-  font-family: "pt sans";
+  text-decoration: none;
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 96px;
+  padding: 8px 50px 8px 50px;
 }
 
 .about_sedona_title_second_line {
@@ -358,11 +559,6 @@ body {
   width: 592px;
 }
 
-.hotel_searching_link {
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-}
-
 .main_newsletter_container {
   width: 1200px;
   display: flex;
@@ -378,7 +574,7 @@ body {
 }
 
 .white_title_2 {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -393,7 +589,7 @@ body {
 }
 
 .white_regular_text {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
@@ -414,20 +610,22 @@ body {
 }
 
 .newsletter_button {
+  display:inline-block;
   width: 232px;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  border: 0;
+  border: none;
+  cursor: pointer;
 }
 
 .footer_container {
-  display: grid;
+display: grid;
   grid-template-columns: min-content min-content min-content;
   grid-template-rows: max-content max-content max-content;
   width: 1200px;
@@ -449,22 +647,71 @@ body {
   grid-column: 2 / 3;
   width: 331px;
   text-align: center;
-
 }
 
 .footer_academy_logo {
+  width: 120px;
   grid-column: 3/4;
   margin-right: 70px;
 }
 
+.academy_svg{
+  fill:rgba(0, 0, 0, 1);
+}
+
+.academy_svg:hover{
+  fill:rgba(117, 97, 87, 1);
+}
+
+.academy_svg:focus{
+  fill:rgba(117, 97, 87, 1);
+}
+
+.academy_svg:active{
+  fill:rgba(117, 97, 87, 0.3)
+}
+
 .footer_phone_link {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.footer_phone_link:hover {
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: rgba(117, 97, 87, 1);
+  text-decoration: none;
+}
+
+.footer_phone_link:focus {
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: rgba(117, 97, 87, 1);
+  text-decoration: none;
+}
+
+.footer_phone_link:active {
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: rgba(117, 97, 87, 0.3);
   text-decoration: none;
 }
 
@@ -483,7 +730,7 @@ body {
 }
 
 .white_title_1 {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 60px;
@@ -527,7 +774,7 @@ body {
 
 .breadcrumbs_link {
   width: 13px;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -555,7 +802,7 @@ body {
 }
 
 .filter_name {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -565,7 +812,7 @@ body {
 
 .filter_list {
   list-style-type: none;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -601,13 +848,13 @@ fieldset {
 .price_inputs {
   display: flex;
   width: 288px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .min_price_input {
   width: 143px;
   height: 48px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .max_price_input {
@@ -626,32 +873,34 @@ fieldset {
 }
 
 .accept_button {
+  display:inline-block;
   width: 191;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  border: 0;
+  border: none;
   padding: 8px 50px;
   margin-bottom: 32px;
   margin-top: 56px;
+  cursor: pointer;
 }
 
 .decline_button {
+  display:inline-block;
   width: 191;
   background-color: rgba(130, 179, 211, 0);
   color: rgba(255, 255, 255, 1);
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  border: 0;
   padding: 8px 50px;
 }
 
@@ -668,7 +917,7 @@ fieldset {
 
 .black_filter_result_title {
   width: 338px;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -681,7 +930,7 @@ fieldset {
 .select_control {
   width: 292px;
   height: 49px;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -690,6 +939,67 @@ fieldset {
   margin-right: 70px;
   border-color: rgba(229, 229, 229, 1);
   border-radius: 4px;
+  outline: 2px;
+
+}
+
+.select_control:hover{
+  width: 292px;
+  height: 49px;
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 1);
+  margin-right: 70px;
+  border-color: rgba(104, 162, 202, 1);
+  border-radius: 4px;
+}
+
+.select_control:focus{
+  width: 292px;
+  height: 49px;
+  border: 2px;
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 1);
+  margin-right: 70px;
+  border-color: rgba(104, 162, 202, 1);
+  border-radius: 4px;
+}
+
+.select_control:active {
+  width: 292px;
+  height: 49px;
+  border: 2px;
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 1);
+  margin-right: 70px;
+  border-color: rgba(63, 94, 114, 1);
+  border-radius: 4px;
+}
+
+.select_control:disabled {
+  width: 292px;
+  height: 49px;
+  border: 2px;
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(rgba(0, 0, 0, 0.3));
+  margin-right: 70px;
+  border-color: rgba(rgba(0, 0, 0, 0.3));
+  border-radius: 4px;
 }
 
 .filter_result_view {
@@ -697,41 +1007,61 @@ fieldset {
   width: 160px;
   justify-content: space-between;
   margin-right: 70px;
+  border: none;
 }
 
 .filter_result_view_plate {
   width: 48px;
   height: 48px;
-  border-color: rgba(0, 0, 0, 1);
-  border-radius: 4px;
   background-image: url(../images/icons/plate.png);
   background-repeat: no-repeat;
   background-position: center;
-  border-style: solid;
   margin-right: 8px;
 
 }
 
 .filter_result_view_picture {
-  width: 48px;
-  height: 48px;
-  border-color: rgba(229, 229, 229, 1);
-  border-radius: 4px;
+  width: 100%;
+  height: 100%;
   background-image: url(../images/icons/picture.png);
   background-repeat: no-repeat;
   background-position: center;
-  border-style: solid;
   margin-right: 8px;
 }
 
 .filter_result_view_list {
   width: 48px;
   height: 48px;
-  border-color: rgba(229, 229, 229, 1);
-  border-radius: 4px;
   background-image: url(../images/icons/list.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.filter_result_action{
+  border:2px;
+  border-color: rgba(229, 229, 229, 1);
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.filter_result_action:hover{
+  border:2px;
+  border-color: rgba(0, 0, 0, 1);
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.filter_result_action:focus{
+  border:2px;
+  border-color: rgba(104, 162, 202, 1);
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.filter_result_action:active{
+  border:2px;
+  border-color: rgba(0, 0, 0, 1);
+  border-radius: 4px;
   border-style: solid;
 }
 
@@ -789,7 +1119,7 @@ fieldset {
 
 .hotel_title {
   width: 300px;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -806,7 +1136,7 @@ fieldset {
 .type_price_container {
   display: flex;
   width: 300px;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -818,7 +1148,7 @@ fieldset {
 .more_favotite_container {
   display: flex;
   width: 300px;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
@@ -844,20 +1174,17 @@ fieldset {
 }
 
 .favorite {
+  display:inline-block;
   width: 140px;
   height: 36px;
-  background-color: rgba(130, 179, 211, 1);
-  color: rgba(255, 255, 255, 1);
   text-align: center;
   text-decoration: none;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 4px;
+  cursor: pointer;
 }
 
 .rating_container {
@@ -874,7 +1201,7 @@ fieldset {
   width: 140px;
   background-color: rgba(242, 242, 242, 1);
   text-align: center;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -903,7 +1230,7 @@ fieldset {
 }
 
 .current_page_link {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -924,7 +1251,7 @@ fieldset {
 }
 
 .next_page_link {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -944,7 +1271,7 @@ fieldset {
 }
 
 .more_page_link {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -967,7 +1294,7 @@ fieldset {
 }
 
 .regular_newsletter_title_2 {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -981,7 +1308,7 @@ fieldset {
 }
 
 .regular_newsletter_regular_text {
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
@@ -1001,19 +1328,21 @@ fieldset {
 }
 
 .regular_newsletter_newsletter_button {
+  display:inline-block;
   width: 232px;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  border: 0;
+  border: none;
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .regular_newsletter_newsletter_input {
@@ -1091,3 +1420,24 @@ fieldset {
   margin-top: 35px;
   margin-bottom: 8px;
 }
+
+.social_svg{
+ fill:rgba(131, 179, 211, 1);
+ cursor: pointer;
+
+}
+
+.social_svg:hover{
+  fill:rgba(104, 162, 202, 1);
+  cursor: pointer;
+ }
+
+ .social_svg:focus{
+  fill:rgba(104, 162, 202, 1);
+  cursor: pointer;
+ }
+
+ .social_svg:active{
+  fill:rgba(104, 162, 202, 0.3);
+  cursor: pointer;
+ }
