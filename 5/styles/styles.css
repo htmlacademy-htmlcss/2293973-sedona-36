@@ -808,20 +808,20 @@ body:focus {
   margin-right: 70px;
 }
 
-.checkboxes {
+.checkboxes, .radios {
   position: relative;
   padding-left: 10px;
 }
 
-.checkboxes:hover {
+.checkboxes:hover, .radios:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.checkboxes:focus {
+.checkboxes:focus, .radios:focus{
   color: rgba(255, 255, 255, 1);
 }
 
-.checkboxes:active {
+.checkboxes:active .radios:active{
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -836,6 +836,16 @@ body:focus {
   top: 1px;
 }
 
+.radio_mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  left: 0px;
+  top: 1px;
+}
 .control_input[type="checkbox"]:checked + .checkbox_mark{
   background-image: url(../images/icons/checkbox.svg);
   fill: rgba(63, 94, 114, 1);
