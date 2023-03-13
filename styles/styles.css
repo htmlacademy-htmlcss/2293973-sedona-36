@@ -840,8 +840,15 @@ fieldset {
 }
 
 .filter_price_range {
+  display:flex;
+  flex-direction: column;
   width: 288px;
   margin-right: 70px;
+}
+
+.min_price_input,
+.max_price_input{
+  width: 143px;
 }
 
 .filter_price_range .filter_name {
@@ -851,20 +858,63 @@ fieldset {
 .price_inputs {
   display: flex;
   width: 288px;
-  border-radius: 0 4px 4px 0;
+  justify-content: space-between;
 }
 
-.min_price_input {
+.range_input{
   width: 143px;
-  height: 48px;
-  border-radius: 4px 0 0 4px;
+  padding: 12px 20px 12px 20px;
+}
+.range_input::-webkit-inner-spin-button,
+.range_input::-webkit-outer-spin-button{
+appearance: none;
+margin: 0;
 }
 
-.max_price_input {
-  width: 143px;
-  height: 48px;
+.range_scale{
+  position: relative;
+  width: 287px;
+  height: 4px;
+  background-color: rgba(110, 117, 119, 1);
+  margin-top: 48px;
 }
+.range_bar{
+  position:absolute;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+ }
 
+ .range_bar:focus{
+  border: 3px;
+  border-color: rgba(131, 179, 211, 1);
+ }
+
+ .range_button:active{
+  border: 2px;
+  border-color: rgba(131, 179, 211, 1);
+ }
+
+ .range_min{
+  left:0;
+  transform: translateY(-40%);
+ }
+
+ .range_max{
+  left:226px;
+  transform: translateX(-50%) translateY(-40%);
+
+ }
+
+ .range_button{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
 .filter_management {
   width: 191px;
   display: flex;
