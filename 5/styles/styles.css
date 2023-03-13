@@ -839,6 +839,10 @@ body:focus {
 .control_input[type="checkbox"]:checked + .checkbox_mark{
   background-image: url(../images/icons/checkbox.svg);
   fill: rgba(63, 94, 114, 1);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-position: center;
   }
 
 .filter_name {
