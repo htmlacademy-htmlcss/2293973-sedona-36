@@ -41,6 +41,10 @@ body:focus {
   flex-grow: 1;
 }
 
+.visually_hidden {
+  visibility: hidden;
+}
+
 .header_container {
   width: 1200px;
   display: flex;
@@ -804,6 +808,39 @@ body:focus {
   margin-right: 70px;
 }
 
+.checkboxes {
+  position: relative;
+  padding-left: 10px;
+}
+
+.checkboxes:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.checkboxes:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.checkboxes:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.checkbox_mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  left: 0px;
+  top: 1px;
+}
+
+.control_input[type="checkbox"]:checked + .checkbox_mark{
+  background-image: url(../images/icons/checkbox.svg);
+  fill: rgba(63, 94, 114, 1);
+  }
+
 .filter_name {
   font-family: "pt sans", sans-serif;
   font-weight: 700;
@@ -840,14 +877,14 @@ fieldset {
 }
 
 .filter_price_range {
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 288px;
   margin-right: 70px;
 }
 
 .min_price_input,
-.max_price_input{
+.max_price_input {
   width: 143px;
 }
 
@@ -861,52 +898,56 @@ fieldset {
   justify-content: space-between;
 }
 
-.range_input{
+.range_input {
   width: 143px;
   padding: 12px 20px 12px 20px;
-}
-.range_input::-webkit-inner-spin-button,
-.range_input::-webkit-outer-spin-button{
-appearance: none;
-margin: 0;
+  border: none;
+  box-sizing: border-box;
 }
 
-.range_scale{
+.range_input::-webkit-inner-spin-button,
+.range_input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range_scale {
   position: relative;
   width: 287px;
   height: 4px;
   background-color: rgba(110, 117, 119, 1);
   margin-top: 48px;
 }
-.range_bar{
-  position:absolute;
+
+.range_bar {
+  position: absolute;
   height: 4px;
   background-color: rgba(255, 255, 255, 1);
   border: none;
- }
+}
 
- .range_bar:focus{
+.range_bar:focus {
   border: 3px;
   border-color: rgba(131, 179, 211, 1);
- }
+}
 
- .range_button:active{
+.range_button:active {
   border: 2px;
   border-color: rgba(131, 179, 211, 1);
- }
+}
 
- .range_min{
-  left:0;
+.range_min {
+  left: 0;
   transform: translateY(-40%);
- }
+}
 
- .range_max{
-  left:226px;
+.range_max {
+  left: 226px;
   transform: translateX(-50%) translateY(-40%);
 
- }
+}
 
- .range_button{
+.range_button {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -914,7 +955,8 @@ margin: 0;
   border: none;
   border-radius: 5px;
   cursor: pointer;
- }
+}
+
 .filter_management {
   width: 191px;
   display: flex;
