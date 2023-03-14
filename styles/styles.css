@@ -896,6 +896,7 @@ content: "";
   height: 20px;
   background-image: url(../images/icons/main.png);
   background-repeat: no-repeat;
+  background-position: center;
   margin-right: 11px;
 }
 
@@ -916,6 +917,12 @@ content: "";
   line-height: 21px;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
+}
+
+.go_home_link{
+  Display:block;
+  width: 13px;
+  height: 20px;
 }
 
 .filter_options_container {
