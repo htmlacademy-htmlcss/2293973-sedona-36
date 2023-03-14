@@ -36,7 +36,16 @@ body {
 }
 
 .visually_hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header_container {
@@ -576,6 +585,7 @@ body {
 
 .about_sedona_title_second_line {
   width: 505px;
+  text-align: center;
 }
 
 .about_sedona_text_second_line {
@@ -880,6 +890,9 @@ body {
   top: 1px;
 }
 
+.filter_options_name{
+  padding-left: 22px;
+}
 .control_input[type="checkbox"]:checked + .checkbox_mark {
   background-image: url(../images/icons/checkbox.svg);
   background-repeat: no-repeat;
@@ -1190,7 +1203,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 8px;
-
 }
 
 .filter_result_view_picture {
@@ -1239,6 +1251,13 @@ body {
   border-color: rgba(0, 0, 0, 1);
   border-radius: 4px;
   border-style: solid;
+}
+
+.checked_view{
+  border: 2px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
 }
 
 .plate_link {
@@ -1627,8 +1646,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
-}
+  }
 
 .modal_window {
   position: relative;
@@ -1851,19 +1869,17 @@ body {
   margin-right: 62px;
 }
 
-.kids::after{
-  display: block;
+.info_button{
   position: absolute;
   width: 26px;
   height: 26px;
   background-color: rgba(131, 179, 211, 1);
   border: none;
   border-radius: 50%;
-  content: "";
   background-image: url(../images/icons/info.svg);
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 59px;
+  margin-left: 15px;
   cursor: pointer;
 }
 
@@ -1924,7 +1940,8 @@ body {
   color: rgba(255, 255, 255, 1);
   left: -57px;
   top: 50px;
-  display: none;
+  visibility: hidden;
+  z-index: 100;
   }
 
 .tooltip_text::after{
@@ -1940,7 +1957,39 @@ body {
   top:-6px;
 }
 
-.kids:hover::after + .tooltip_text{
-  display:block;
+.info_button:hover + .tooltip_text{
+  visibility: visible;
 }
 /*не работает*/
+
+.blue_decoration{
+  position: relative;
+}
+
+.blue_decoration::after{
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  content: "";
+  left: 60px;
+  top: 80px;
+}
+
+.grey_decoration{
+  position: relative;
+}
+
+.grey_decoration::after{
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  content: "";
+  left: 60px;
+  top: 80px;
+}
+
+.unusual_button{
+  border-radius: 0 4px 4px 0;
+}
