@@ -146,6 +146,67 @@ body {
   text-decoration: none;
 }
 
+.header_link:hover {
+  font-family: "pt sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  opacity: 60%;
+}
+
+.header_link:focus {
+  font-family: "pt sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  background-color: rgba(131, 179, 211, 1);
+  border-radius: 4px;
+}
+
+.header_link:active {
+  font-family: "pt sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  opacity: 30%;
+  background-color: rgba(255, 255, 255, 1);
+}
+.maim_element{
+  position: relative;
+}
+
+.main_element::before{
+position: absolute;
+ width: 68px;
+height: 2px;
+background-color: rgba(117, 98, 87, 1);
+top: 62px;
+content: "";
+}
+
+.user_menu_link:hover {
+  opacity: 60%;
+}
+
+.user_menu_link:focus {
+  background-color: rgba(131, 179, 211, 1);
+  border-radius: 4px;
+}
+
+.user_menu_link:active {
+  opacity: 30%;
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .want_it {
   display: block;
   width: 160px;
