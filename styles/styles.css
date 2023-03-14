@@ -530,6 +530,7 @@ body {
 .city_service_container {
   display: flex;
   width: 1200px;
+  flex-wrap: wrap;
 }
 
 .grey_box_city_service_container {
@@ -872,29 +873,27 @@ body {
   cursor: pointer;
 }
 
-.checkboxes:hover,
-.radios:hover {
+.filter_options_name:hover{
   opacity: 60%
 }
 
-.checkboxes:active,
-.radios:active {
-  opacity: 30%;
+.filter_options_name:focus{
+  opacity: 100%
 }
 
-.checkbox_mark:focus,
-.radio_mark:focus {
-  border-style: solid;
-  border: 3px;
-  border-color: rgba(131, 179, 211, 1);
+.filter_options_name:active{
+  opacity: 30%;
 }
 
 .checkbox_mark {
   position: absolute;
   width: 20px;
   height: 20px;
-  border: none;
+  border: 3px;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: solid;
   border-radius: 4px;
+  box-sizing: border-box;
   background-color: rgba(255, 255, 255, 1);
   left: 0;
   top: 1px;
@@ -904,11 +903,53 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  border: none;
+  border: 3px;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  box-sizing: border-box;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
   left: 0;
+  top: 1px;
+}
 
+.checkbox_mark:hover, .radio_mark:hover{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  left: 0;
+  top: 1px;
+  opacity: 60%;
+}
+
+.checkbox_mark:focus, .radio_mark:focus{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px;
+  border-color: rgba(131, 179, 211, 1);
+  border-style: solid;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  left: 0;
+  top: 1px;
+}
+
+.checkbox_mark:active, .radio_mark:active{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  left: 0;
   top: 1px;
 }
 
@@ -916,12 +957,12 @@ body {
   padding-left: 22px;
 }
 
-.control_input[type="checkbox"]:checked + .checkbox_mark {
+.control_input[type="checkbox"]:checked ~ .checkbox_mark {
   background-image: url(../images/icons/checkbox.svg);
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  background-position: 4px;
+  background-position: 2px;
 }
 
 .control_input[type="radio"]:checked + .radio_mark {
@@ -929,7 +970,7 @@ body {
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  background-position: 5px;
+  background-position: 2px;
 }
 
 .filter_name {
