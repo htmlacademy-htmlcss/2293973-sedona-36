@@ -20,6 +20,7 @@ html {
 
 :focus {
   outline: none;
+  box-shadow: 0 0 1px rgba(255, 255, 0, 0.7);
 }
 
 body {
@@ -426,6 +427,7 @@ body {
 .city_advantages_first_line_container {
   display: flex;
   width: 1200px;
+  flex-wrap: wrap;
 }
 
 .blue_box_advantages_description_container {
@@ -475,6 +477,7 @@ body {
 .city_advantages_second_line_container {
   display: flex;
   width: 1200px;
+  flex-wrap: wrap;
 }
 
 .pale_grey_box_advantages_description_container {
@@ -517,6 +520,7 @@ body {
 .city_advantages_third_line_container {
   display: flex;
   width: 1200px;
+  flex-wrap: wrap;
 }
 
 .advantages_image {
