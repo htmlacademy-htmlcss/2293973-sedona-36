@@ -36,17 +36,23 @@
           </nav>
         </div>
         <div class="user_menu_container">
-          <div class="user_menu_search_container">
-            <a class="header_link" href="#">
-              <img class="user_menu_icon" src="images/icons/search.png" alt="Поиск гостиницы." width="20" height="20">
-            </a>
-          </div>
-          <div class="user_menu_favorite_container">
-            <a class="header_link" href="#">
-              <img class="user_menu_icon" src="images/icons/favorite.png" alt="Избранные гостиницы" width="20"
-                height="20">
-            </a>
-          </div>
+          <a class="user_menu_link" href="#">
+            <svg class="user_menu_icon" width="18" height="17" viewBox="0 0 18 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
+                fill="black" />
+            </svg>
+          </a>
+          <a class="user_menu_link" href="#">
+            <svg class="user_menu_icon favorite_icon" width="18" height="17" viewBox="0 0 18 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
+                fill="" />
+            </svg>
+            <span class="favorite_circle">12</span>
+          </a>
           <div class="user_menu_link_container">
             <a class="want_it brown_button" href="catalog.html">Хочу сюда!</a>
           </div>
@@ -166,7 +172,7 @@
             Седоне</p>
         </div>
         <div class="hotel_searching_link_container">
-          <a class="hotel_searching_link brown_button" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <button class="hotel_searching_link brown_button" type="button">Поиск гостиницы в Седоне</button>
         </div>
       </div>
       <div class="main_newsletter_container">
@@ -192,7 +198,7 @@
     <footer class="page_footer">
       <div class="footer_container">
         <div class="footer_social">
-          <a class="footer_link">
+          <a class="footer_link" href="https://vk.com">
             <svg class="social_svg" width="24" height="14" viewBox="0 0 24 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -200,7 +206,7 @@
                 fill="" />
             </svg>
           </a>
-          <a class="footer_link">
+          <a class="footer_link" href="https://web.telegram.org/">
             <svg class="social_svg" width="18" height="16" viewBox="0 0 18 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -208,7 +214,7 @@
                 fill="" />
             </svg>
           </a>
-          <a class="footer_link">
+          <a class="footer_link" href="https://youtube.com">
             <svg class="social_svg" width="22" height="17" viewBox="0 0 22 17" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -221,7 +227,7 @@
           <a class="footer_phone_link" href="tel:+78128121212">+7(812) 812-12-12</a>
         </div>
         <div class="footer_academy_logo">
-          <a class="footer_link" href="#">
+          <a class="footer_link" href="https://htmlacademy.ru/">
             <svg class="academy_svg" width="115" height="34" viewBox="0 0 115 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M0 13.7232V16.3232H2.5V13.7232H0Z" fill="" />
@@ -263,5 +269,75 @@
         </div>
       </div>
     </footer>
+    <div class="modal_container">
+      <div class="modal_window">
+        <button class="modal_close_button">
+          <span class="visually_hidden">закрыть</span>
+        </button>
+        <div class="modal_header">
+          <h2 class="title_2 modal_title_2">Поиск гостиницы в Седоне</h2>
+        </div>
+        <form>
+          <div class="arrival_container">
+            <div class="modal_title">Дата Заезда:</div>
+            <div class="arrival_input_container">
+              <label class="modal_input_label" for="arrival_input">
+                <input class="modal_input arrival_input" type="text" name="arrival_input" id="arrival_input"
+                  value="27 апреля 2020">
+              </label>
+              <span class="mistake_message">Мы не можем отправить вас в прошлое.</span>
+            </div>
+          </div>
+          <div class="departure_container">
+            <div class="modal_title deaprture_title">Дата Выезда:</div>
+            <div class="departure_input_container">
+              <label class="modal_input_label" for="departure_input">
+                <input class="modal_input departure_input" type="text" name="departure_input" id="departure_input"
+                  value="1 сентября 2023">
+              </label>
+              <span class="approve_message">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+          </div>
+          <div class="clients_container">
+            <div class="modal_title adults">Взрослые:</div>
+            <div class="clients_number_input adults_input">
+              <label class="modal_input_label" for="adult_clients_input">
+                <input class="modal_input_adding adult_clients_input" type="number" name="adult_clients_input"
+                  id="adult_clients_input" value="2">
+              </label>
+              <button class="delete_adult_clients" type="button">
+                <span class="visually_hidden">уменьшить количество взрослых</span>
+              </button>
+              <button class="add_adult_clients" type="button">
+                <span class="visually_hidden">увеличить количество взрослых</span>
+              </button>
+            </div>
+            <div class="modal_title kids">Дети:
+              <div class="modal_info"></div>
+              <div class="tooltip_text">
+                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                размещаются бесплатно.
+              </div>
+            </div>
+            <div class="clients_number_input kids_input">
+              <label class="modal_input_label" for="kid_clients_input">
+                <input class="modal_input_adding kid_clients_input" type="number" name="kid_clients_input"
+                  id="kid_clients_input" value="2">
+              </label>
+              <button class="delete_kid_clients" type="button">
+                <span class="visually_hidden">уменьшить количество детей</span>
+              </button>
+              <button class="add_kid_clients" type="button">
+                <span class="visually_hidden">увеличить количество детей</span>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="search_button_container">
+          <button class="search_button" type="submit">Найти</button>
+        </div>
+      </div>
+    </div>
+  </body>
 
 </html>
