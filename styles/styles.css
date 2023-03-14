@@ -1953,7 +1953,7 @@ content: "";
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display:
+  display: none;
 }
 
 .modal_window {
@@ -2449,7 +2449,7 @@ content: "";
   background-position: center;
   margin-left: 15px;
   cursor: pointer;
-  }
+              }
 
 .search_button_container {
   width: 577px;
