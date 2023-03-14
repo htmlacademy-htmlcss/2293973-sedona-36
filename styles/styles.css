@@ -314,7 +314,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  border:3px;
+  border: 3px;
   border-radius: 4px;
   border-color: rgba(0, 0, 0, 0);
   border-style: solid;
@@ -326,7 +326,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  border:3px;
+  border: 3px;
   border-radius: 4px;
   border-color: rgba(0, 0, 0, 0);
   border-style: solid;
@@ -338,7 +338,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  border:3px;
+  border: 3px;
   border-radius: 4px;
   border-color: rgba(131, 179, 211, 1);
   border-style: solid;
@@ -351,7 +351,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  border:3px;
+  border: 3px;
   border-radius: 4px;
   border-color: rgba(0, 0, 0, 0);
   border-style: solid;
@@ -364,7 +364,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  border:3px;
+  border: 3px;
   border-radius: 4px;
   border-color: rgba(0, 0, 0, 0);
   border-style: solid;
@@ -873,15 +873,58 @@ body {
   cursor: pointer;
 }
 
-.filter_options_name:hover{
+.checkbox_mark:hover,
+.radio_mark:hover {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  left: 0;
+  top: 1px;
+  opacity: 60%;
+}
+
+.checkbox_mark:focus,
+.radio_mark:focus {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px;
+  border-color: rgba(131, 179, 211, 1);
+  border-style: solid;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  left: 0;
+  top: 1px;
+}
+
+.checkbox_mark:active,
+.radio_mark:active {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  left: 0;
+  top: 1px;
+}
+
+.filter_options_name:hover {
   opacity: 60%
 }
 
-.filter_options_name:focus{
+.filter_options_name:focus {
   opacity: 100%
 }
 
-.filter_options_name:active{
+.filter_options_name:active {
   opacity: 30%;
 }
 
@@ -908,46 +951,6 @@ body {
   border-style: solid;
   box-sizing: border-box;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 1);
-  left: 0;
-  top: 1px;
-}
-
-.checkbox_mark:hover, .radio_mark:hover{
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 3px;
-  border-color: rgba(0, 0, 0, 0);
-  border-style: solid;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 1);
-  left: 0;
-  top: 1px;
-  opacity: 60%;
-}
-
-.checkbox_mark:focus, .radio_mark:focus{
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 3px;
-  border-color: rgba(131, 179, 211, 1);
-  border-style: solid;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 1);
-  left: 0;
-  top: 1px;
-}
-
-.checkbox_mark:active, .radio_mark:active{
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 3px;
-  border-color: rgba(0, 0, 0, 0);
-  border-style: solid;
-  box-sizing: border-box;
   background-color: rgba(255, 255, 255, 1);
   left: 0;
   top: 1px;
@@ -1406,7 +1409,7 @@ body {
   box-sizing: border-box;
 }
 
-.action_view_link:hover{
+.action_view_link:hover {
   width: 48px;
   height: 48px;
   display: block;
@@ -1417,7 +1420,7 @@ body {
   box-sizing: border-box;
 }
 
-.action_view_link:focus{
+.action_view_link:focus {
   width: 48px;
   height: 48px;
   display: block;
@@ -1428,7 +1431,7 @@ body {
   box-sizing: border-box;
 }
 
-.action_view_link:active{
+.action_view_link:active {
   width: 48px;
   height: 48px;
   display: block;
@@ -1599,8 +1602,8 @@ body {
 }
 
 .pagination_page {
- margin-right: 8px;
- }
+  margin-right: 8px;
+}
 
 .next_page_link {
   width: 60px;
@@ -1880,7 +1883,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display:none;
+  display: none;
 }
 
 .modal_window {
@@ -2027,15 +2030,15 @@ body {
 
 .delete_adult_clients {
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
   border-style: solid;
   box-sizing: border-box;
-  left: 173px;
-  top: 17px;
+  left: 171px;
+  top: 14px;
   background-color: rgba(242, 242, 242, 1);
   background-image: url(../images/icons/minus.svg);
   background-repeat: no-repeat;
@@ -2045,15 +2048,15 @@ body {
 
 .add_adult_clients {
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
   border-style: solid;
   box-sizing: border-box;
-  left: 244px;
-  top: 17px;
+  left: 242px;
+  top: 13px;
   background-color: rgba(242, 242, 242, 1);
   background-image: url(../images/icons/plus.svg);
   background-repeat: no-repeat;
@@ -2063,15 +2066,15 @@ body {
 
 .delete_kid_clients {
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
   border-style: solid;
   box-sizing: border-box;
-  left: 482px;
-  top: 17px;
+  left: 480px;
+  top: 14px;
   background-color: rgba(242, 242, 242, 1);
   background-image: url(../images/icons/minus.svg);
   background-repeat: no-repeat;
@@ -2081,15 +2084,15 @@ body {
 
 .add_kid_clients {
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
   border-style: solid;
   box-sizing: border-box;
-  left: 553px;
-  top: 17px;
+  left: 551px;
+  top: 14px;
   background-color: rgba(242, 242, 242, 1);
   background-image: url(../images/icons/plus.svg);
   background-repeat: no-repeat;
@@ -2097,9 +2100,9 @@ body {
   cursor: pointer;
 }
 
-.action_minus:hover{
-  width: 14px;
-  height: 14px;
+.action_minus:hover {
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
@@ -2111,9 +2114,9 @@ body {
   cursor: pointer;
 }
 
-.action_minus:focus{
-  width: 14px;
-  height: 14px;
+.action_minus:focus {
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(131, 179, 211, 1);
   border-radius: 4px;
@@ -2125,9 +2128,9 @@ body {
   cursor: pointer;
 }
 
-.action_minus:active{
-  width: 14px;
-  height: 14px;
+.action_minus:active {
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
@@ -2139,9 +2142,9 @@ body {
   cursor: pointer;
 }
 
-.action_plus:hover{
-  width: 14px;
-  height: 14px;
+.action_plus:hover {
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
@@ -2153,9 +2156,9 @@ body {
   cursor: pointer;
 }
 
-.action_plus:focus{
-  width: 14px;
-  height: 14px;
+.action_plus:focus {
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(131, 179, 211, 1);
   border-radius: 4px;
@@ -2167,9 +2170,9 @@ body {
   cursor: pointer;
 }
 
-.action_plus:active{
-  width: 14px;
-  height: 14px;
+.action_plus:active {
+  width: 20px;
+  height: 20px;
   border: 3px;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
