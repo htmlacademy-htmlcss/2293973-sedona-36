@@ -65,7 +65,7 @@ body {
   width: 140px;
   margin-left: 70px;
   margin-right: 28px;
-  margin-bottom: -15px;
+  margin-bottom: -10px;
   z-index: 1;
 }
 
@@ -74,7 +74,7 @@ body {
   display: flex;
   padding: 0;
   justify-content: center;
-  margin-right: 285px;
+  margin-right: 287px;
 }
 
 .header_link_container {
@@ -85,30 +85,24 @@ body {
   width: 268px;
   display: flex;
   align-items: center;
-  margin-right: 70px;
-  justify-content: space-around;
+  margin-right: 60px;
 }
 
+.search_container{
+  margin-left: 10px;
+  margin-top: 2px;
+}
 
+.favorite_container{
+  margin-left:27px;
+  margin-top: 5px;
+}
+
+.want_it_container{
+  margin-left: 33px;
+}
 .user_menu_icon {
   fill: rgba(0, 0, 0, 1);
-}
-
-.user_menu_search_container {
-  width: 44px;
-  padding: 22px 12px 22px 12px;
-}
-
-.user_menu_favorite_container {
-  width: 44px;
-  padding: 24px 13px 23px 13px;
-}
-
-.user_menu_link_container {
-  width: 160px;
-  padding-left: 10px;
-  padding-top: 14px;
-  padding-bottom: 14px;
 }
 
 .user_menu_link {
@@ -226,7 +220,6 @@ content: "";
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
-
 }
 
 .brown_button {
@@ -417,7 +410,6 @@ content: "";
 
 .transparent_button:active {
   color: rgba(255, 255, 255, 0.3);
-  border: none;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -502,16 +494,27 @@ content: "";
 
 .blue_box_advantages_description_container {
   width: 400px;
+  height: 100%;
   background-color: rgba(130, 179, 211, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .city_advantages_title_container {
   width: 175px;
   text-align: center;
+  margin-top: 30px;
+}
+
+.blue_decoration::after {
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  content: "";
+  left: 57px;
+  top: 88px;
 }
 
 .white_advantages_title {
@@ -528,6 +531,8 @@ content: "";
 .city_advantages_text_container {
   width: 230px;
   text-align: center;
+  margin-top: 26px;
+  margin-bottom: 55x;
 }
 
 .white_advantages_text {
@@ -542,12 +547,15 @@ content: "";
 
 .city_advantages_first_line_image_container {
   width: 800px;
+  height: 100%;
 }
 
 .city_advantages_second_line_container {
   display: flex;
   width: 1200px;
   flex-wrap: wrap;
+  margin-top: -5px;
+  margin-bottom: -31px;
 }
 
 .pale_grey_box_advantages_description_container {
@@ -557,6 +565,7 @@ content: "";
   flex-direction: column;
   align-items: center;
 }
+
 
 .black_title {
   font-family: "pt sans", sans-serif;
@@ -579,6 +588,10 @@ content: "";
   color: rgba(0, 0, 0, 1);
 }
 
+.city_advantages_second_line_title_container{
+  width:175px;
+  margin-top: 1px;
+}
 .grey_box_advantages_description_container {
   width: 400px;
   background-color: rgba(131, 179, 211, 0.2);
@@ -587,10 +600,34 @@ content: "";
   align-items: center;
 }
 
+.blue_decoration {
+  position: relative;
+}
+
+
+.grey_decoration {
+  position: relative;
+}
+
+.grey_decoration::after {
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  content: "";
+  left: 58px;
+  top: 198px;
+}
+.city_advantages_second_line_text_container{
+  width: 230px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
 .city_advantages_third_line_container {
   display: flex;
   width: 1200px;
   flex-wrap: wrap;
+  margin-top: ;
 }
 
 .advantages_image {
@@ -632,7 +669,7 @@ content: "";
   background-image: url(../images/icons/gift.png);
   color: rgba(0, 0, 0, 1);
   background-repeat: no-repeat;
-  background-position: top 81px right 162px;
+  background-position: top 80px right 166px;
 }
 
 .city_service_title_container {
@@ -641,6 +678,7 @@ content: "";
 
 .city_service_text_container {
   width: 230px;
+  margin-top: -8px;
 }
 
 .pale_grey_box_city_service_container_food {
@@ -658,12 +696,12 @@ content: "";
 .hotel_searching_link_container {
   width: 376px;
   text-align: center;
-
-  margin-top: 20px;
+  margin-top: 17px;
   margin-bottom: 96px;
 }
 
 .hotel_searching_link {
+  display:block;
   width: 376px;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
@@ -673,12 +711,14 @@ content: "";
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  padding: 8px 50px 8px 50px;
+  padding: 8px 0 8px 0;
 }
 
 .about_sedona_title_second_line {
   width: 505px;
   text-align: center;
+  margin-top: -4px;
+  margin-bottom: -27px;
 }
 
 .about_sedona_text_second_line {
@@ -706,14 +746,15 @@ content: "";
 
 .about_sedona_title_newsletter {
   width: 404px;
+  margin-bottom: -19px;
 }
 
 .white_title_2 {
   font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 30px;
+  line-height: 36px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
@@ -721,6 +762,7 @@ content: "";
 
 .about_sedona_text_newsletter {
   width: 475px;
+  margin-bottom:-54px
 }
 
 .white_regular_text {
@@ -741,7 +783,16 @@ content: "";
 }
 
 .newsletter_input {
-  width: 452px;
+  width: 442px;
+  padding-top: 8px;
+  padding-left: 10px;
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px 0 0 4px;
 }
 
 .newsletter_button {
@@ -757,7 +808,14 @@ content: "";
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  padding-top:8px;
+  padding-bottom: 8px;
 }
+
+.unusual_button {
+  border-radius: 0 4px 4px 0;
+}
+
 
 .footer_container {
   display: grid;
@@ -765,9 +823,9 @@ content: "";
   grid-template-rows: max-content max-content max-content;
   width: 1200px;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 30px;
   justify-items: center;
+  margin-top: 44px;
 }
 
 .footer_social {
@@ -776,18 +834,21 @@ content: "";
   display: flex;
   justify-content: space-around;
   margin-left: 70px;
+  margin-top: 5px;
 }
 
 .footer_phone {
   grid-column: 2 / 3;
   width: 331px;
   text-align: center;
+  margin-left: 237px;
 }
 
 .footer_academy_logo {
   width: 120px;
   grid-column: 3/4;
-  margin-right: 70px;
+  margin-left: 235px;
+  margin-top:4px;
 }
 
 .academy_svg {
@@ -1872,11 +1933,13 @@ content: "";
 }
 
 .first_line_text {
-  margin-bottom: 69px;
+  margin-top:0px;
+  margin-bottom: 90px;
 }
 
 .white_advantages_title {
-  margin-top: 102px;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .white_advantages_text {
@@ -1913,8 +1976,8 @@ content: "";
 }
 
 .third_line_text {
-  margin-top: 20px;
-  margin-bottom: 54px;
+  margin-top: 0px;
+  margin-bottom: 38px;
 }
 
 .newsletter_title {
@@ -1976,9 +2039,6 @@ content: "";
   border-radius: 30px;
 }
 
-.hotel_searching_link:active + .modal_container {
-  display: block;
-}
 
 .modal_header {
   display: block;
@@ -2663,36 +2723,4 @@ content: "";
 .modal_info:hover + .tooltip_text,
 .modal_info:focus + .tooltip_text {
   display: block;
-}
-
-.blue_decoration {
-  position: relative;
-}
-
-.blue_decoration::after {
-  width: 60px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  content: "";
-  left: 60px;
-  top: 80px;
-}
-
-.grey_decoration {
-  position: relative;
-}
-
-.grey_decoration::after {
-  width: 60px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  content: "";
-  left: 60px;
-  top: 80px;
-}
-
-.unusual_button {
-  border-radius: 0 4px 4px 0;
 }
