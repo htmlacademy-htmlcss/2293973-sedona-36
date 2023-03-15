@@ -187,14 +187,6 @@ top: 62px;
 content: "";
 }
 
-.catalog_element::before{
-  position: absolute;
-   width: 68px;
-  height: 2px;
-  background-color: rgba(117, 98, 87, 1);
-  top: 93px;
-  content: "";
-  }
 
 .user_menu_link:hover {
   opacity: 60%;
@@ -627,7 +619,6 @@ content: "";
   display: flex;
   width: 1200px;
   flex-wrap: wrap;
-  margin-top: ;
 }
 
 .advantages_image {
@@ -793,6 +784,8 @@ content: "";
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
   border-radius: 4px 0 0 4px;
+  border: 0;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .newsletter_button {
@@ -815,7 +808,6 @@ content: "";
 .unusual_button {
   border-radius: 0 4px 4px 0;
 }
-
 
 .footer_container {
   display: grid;
@@ -911,6 +903,15 @@ content: "";
   text-decoration: none;
 }
 
+.catalog_element::before{
+  position: absolute;
+   width: 93px;
+  height: 2px;
+  background-color: rgba(117, 98, 87, 1);
+  top: 63px;
+  content: "";
+  }
+
 .catalog_filter_container {
   width: 1200px;
   background-image: url(../images/backgrounds/filter.jpg);
@@ -940,6 +941,7 @@ content: "";
   flex-direction: row;
   margin-left: 70px;
   padding: 0;
+  margin-top: -17px;
 }
 
 .breadcrumbs_list {
@@ -967,6 +969,7 @@ content: "";
   background-position: left;
   background-repeat: no-repeat;
   text-align: right;
+  margin-left: -1px;
 }
 
 .breadcrumbs_link {
@@ -992,6 +995,7 @@ content: "";
   color: rgba(255, 255, 255, 1);
   padding: 0;
   margin-left: 70px;
+  margin-top: 26px;
 }
 
 .filter_options_form {
@@ -1148,7 +1152,9 @@ content: "";
   width: 150px;
   margin-right: 140px;
 }
-
+.filter_price_range_container{
+  margin-left: -13px;
+}
 .filter_price_range {
   display: flex;
   flex-direction: column;
@@ -1171,11 +1177,14 @@ content: "";
   display: flex;
   width: 288px;
   justify-content: space-between;
+  margin-top:-7px;
 }
 
 .range_input {
   width: 143px;
-  padding: 12px 20px 12px 20px;
+  padding-left: 17px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   border: 3px;
   border-color: rgba(0, 0, 0, 0);
   border-style: solid;
@@ -1243,7 +1252,7 @@ content: "";
   border-radius: 0 4px 4px 0;
 }
 
-.input_range_text {
+.input_range_text_from {
   font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1251,7 +1260,19 @@ content: "";
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  left: 110px;
+  left: 107px;
+  top: 12px;
+}
+
+.input_range_text_till {
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 104px;
   top: 12px;
 }
 
@@ -1260,12 +1281,12 @@ content: "";
   width: 287px;
   height: 4px;
   background-color: rgba(110, 117, 119, 1);
-  margin-top: 48px;
+  margin-top: 44px;
 }
 
 .range_bar {
   position: absolute;
-  width: 226px;
+  width: 228px;
   height: 4px;
   left:0;
   background-color: rgba(255, 255, 255, 1);
@@ -1289,7 +1310,7 @@ content: "";
 }
 
 .range_max {
-  left: 226px;
+  left: 217px;
   transform: translateX(-50%) translateY(-40%);
 
 }
@@ -1342,16 +1363,16 @@ content: "";
   cursor: pointer;
 }
 
-.filter_management {
-  width: 191px;
-  display: flex;
-  flex-direction: column;
-}
-
 .price_ranger {
   display: flex;
 }
 
+.filter_management {
+  width: 191px;
+  display: flex;
+  flex-direction: column;
+  margin-left: -12px;
+}
 .accept_button {
   display: inline-block;
   width: 191;
@@ -1365,7 +1386,7 @@ content: "";
   text-transform: uppercase;
   border: none;
   padding: 8px 50px;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
   margin-top: 56px;
   cursor: pointer;
 }
@@ -1390,7 +1411,7 @@ content: "";
   width: 1200px;
   background-color: rgba(255, 255, 255, 1);
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 40px;
   padding: 0;
 }
@@ -1408,13 +1429,18 @@ content: "";
 }
 
 .select_control {
-  width: 288px;
-  height: 45px;
+  width: 292px;
+  height: 50px;
+  appearance: none;
+  background-image: url(../images/icons/select.svg);
+  background-repeat: no-repeat;
+  background-position: 258px 19px;
   font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
+  padding-left: 18px;
   margin-right: 70px;
   border: 2px;
   border-color: rgba(229, 229, 229, 1);
@@ -1424,15 +1450,7 @@ content: "";
 }
 
 .select_control:hover {
-  width: 288px;
-  height: 45px;
-  font-family: "pt sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
   color: rgba(51, 51, 51, 1);
-  margin-right: 70px;
   border: 2px;
   border-color: rgba(104, 162, 202, 1);
   border-radius: 4px;
@@ -1441,15 +1459,7 @@ content: "";
 }
 
 .select_control:focus {
-  width: 288px;
-  height: 45px;
-  font-family: "pt sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
   color: rgba(51, 51, 51, 1);
-  margin-right: 70px;
   border: 2px;
   border-color: rgba(104, 162, 202, 1);
   border-radius: 4px;
@@ -1458,15 +1468,7 @@ content: "";
 }
 
 .select_control:active {
-  width: 288px;
-  height: 45px;
-  font-family: "pt sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
   color: rgba(51, 51, 51, 1);
-  margin-right: 70px;
   border: 2px;
   border-color: rgba(63, 94, 114, 1);
   border-radius: 4px;
@@ -1475,15 +1477,7 @@ content: "";
 }
 
 .select_control:disabled {
-  width: 288px;
-  height: 45px;
-  font-family: "pt sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
   color: rgba(51, 51, 51, 1);
-  margin-right: 70px;
   border: 2px;
   border-color: rgba(229, 229, 229, 1);
   border-radius: 4px;
@@ -1589,6 +1583,7 @@ content: "";
   width: 1060px;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: -19px;
 }
 
 .hotel_description {
@@ -1624,12 +1619,12 @@ content: "";
   font-style: normal;
   font-size: 24px;
   line-height: 28px;
-  margin-top: 16px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
 .type_price {
-  margin-top: 16px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -1657,7 +1652,7 @@ content: "";
   text-transform: uppercase;
   text-decoration: none;
   padding: 0;
-  margin-top: 16px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -1692,7 +1687,7 @@ content: "";
   width: 300px;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: -15px;
   padding: 0;
 }
 
@@ -1715,7 +1710,7 @@ content: "";
   width: 1200px;
   display: flex;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 63px;
 }
 
 .current_page {
@@ -1839,7 +1834,8 @@ content: "";
   display: flex;
   justify-content: center;
   align-items: center;
-
+margin-left: 5px;
+margin-right: 3px;
 }
 
 .more_page_link {
@@ -1860,7 +1856,9 @@ content: "";
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
 }
+
 
 .regular_newsletter_about_sedona_title {
   width: 404px;
@@ -1870,14 +1868,15 @@ content: "";
   font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 30px;
+  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .regular_newsletter_about_sedona_text {
   width: 475px;
+  margin-top: -19px;
 }
 
 .regular_newsletter_regular_text {
@@ -1889,17 +1888,27 @@ content: "";
   text-align: center;
 }
 
-.regular_newsletter_newsletter_container {
+.regular_newsletter_input_container{
   display: flex;
   width: 684px;
-  margin-top: 54px;
+  margin-top: 0;
   margin-bottom: 104px;
 }
 
-.regular_newsletter_newsletter_input {
-  width: 452px;
+.regular_newsletter_input{
+  width: 442px;
+  padding-top: 8px;
+  padding-left: 10px;
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px 0 0 4px;
+  border: 0;
+  background-color: rgba(242, 242, 242, 1);
 }
-
 .regular_newsletter_newsletter_button {
   display: inline-block;
   width: 232px;
@@ -1918,22 +1927,12 @@ content: "";
   cursor: pointer;
 }
 
-.regular_newsletter_newsletter_input {
-  border: 0;
-  background-color: rgba(242, 242, 242, 1);
-}
-
-.newsletter_input {
-  border: 0;
-  background-color: rgba(242, 242, 242, 1);
-}
-
 .first_line_title {
   margin-top: 69px;
 }
 
 .first_line_text {
-  margin-top:0px;
+  margin-top:0p;
   margin-bottom: 90px;
 }
 
@@ -1976,7 +1975,7 @@ content: "";
 }
 
 .third_line_text {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 38px;
 }
 
