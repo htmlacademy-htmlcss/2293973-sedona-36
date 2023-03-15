@@ -214,7 +214,7 @@
             </form>
           </div>
           <div class="newsletter_button_container">
-            <button class="newsletter_button blue_button unusual_button" type="submit">Подписаться</button>
+            <button class="newsletter_button unusual_button" type="submit">Подписаться</button>
             <span class="visually_hidden">Подписаться на рассылку.</span>
           </div>
         </div>
@@ -303,78 +303,80 @@
     <div class="modal_container">
       <h2 class="visually_hidden">Окно для поиска гостиницы</h2>
       <div class="modal_window">
-        <button class="modal_close_button" type="button">
-          <span class="visually_hidden">Закрыть окно поиска гостиницы</span>
-        </button>
-        <div class="modal_header">
-          <h2 class="title_2 modal_title_2">Поиск гостиницы в Седоне</h2>
-        </div>
-        <form class="modal_form" action="#" method="get">
-          <div class="arrival_container">
-            <div class="modal_title">Дата Заезда:</div>
-            <div class="arrival_input_container">
-              <label class="modal_input_label" for="arrival_input">
-                <input class="modal_input arrival_input" type="text" name="arrival_input" id="arrival_input"
-                  placeholder="Укажите дату">
-                <span class="visually_hidden">Поле для ввода предполагаемой даты заезда.</span>
-              </label>
-              <span class="mistake_message">Мы не можем отправить вас в прошлое.</span>
-            </div>
+        <div class="modal_content_container">
+          <button class="modal_close_button" type="button">
+            <span class="visually_hidden">Закрыть окно поиска гостиницы</span>
+          </button>
+          <div class="modal_header">
+            <h2 class="title_2">Поиск гостиницы в Седоне</h2>
           </div>
-          <div class="departure_container">
-            <div class="modal_title deaprture_title">Дата Выезда:</div>
-            <div class="departure_input_container">
-              <label class="modal_input_label" for="departure_input">
-                <input class="modal_input departure_input" type="text" name="departure_input" id="departure_input"
-                  placeholder="Укажите дату">
-                <span class="visually_hidden">Поле для ввода предполагаемой даты выезда.</span>
-              </label>
-              <span class="approve_message">На эти даты есть свободные номера. Пока есть.</span>
-            </div>
-          </div>
-          <div class="clients_container">
-            <div class="modal_title adults">Взрослые:</div>
-            <div class="clients_number_input adults_input">
-              <label class="modal_input_label" for="adult_clients_input">
-                <input class="modal_input_adding adult_clients_input" type="number" name="adult_clients_input"
-                  id="adult_clients_input" value="2">
-                <span class="visually_hidden">Поле для ввода количества взрослых гостей.</span>
-              </label>
-              <button class="delete_adult_clients action_minus" type="button">
-                <span class="visually_hidden">Уменьшить количество взрослых гостей</span>
-              </button>
-              <button class="add_adult_clients action_plus" type="button">
-                <span class="visually_hidden">Добавить взрослого гостя</span>
-              </button>
-            </div>
-            <div class="modal_title kids">Дети:
-              <div class="modal_info">
-                <button class="info_button" type="button"></button>
-                <span class="visually_hidden">Получить дополнительную инфомрацию о размещении детей.</span>
-              </div>
-              <div class="tooltip_text">
-                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                размещаются бесплатно.
+          <form class="modal_form" action="#" method="get">
+            <div class="arrival_container">
+              <div class="modal_title arrival_title">Дата Заезда:</div>
+              <div class="arrival_input_container">
+                <label class="modal_input_label" for="arrival_input">
+                  <input class="modal_input arrival_input" type="text" name="arrival_input" id="arrival_input"
+                    placeholder="Укажите дату">
+                  <span class="visually_hidden">Поле для ввода предполагаемой даты заезда.</span>
+                </label>
+                <span class="mistake_message">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
-            <div class="clients_number_input kids_input">
-              <label class="modal_input_label" for="kid_clients_input">
-                <input class="modal_input_adding kid_clients_input" type="number" name="kid_clients_input"
-                  id="kid_clients_input" value="2">
-                <span class="visually_hidden">Поле для ввода количества гостей детского возраста.</span>
-              </label>
-              <button class="delete_kid_clients action_minus" type="button">
-                <span class="visually_hidden">Уменьшить количество гостей детского возраста</span>
-              </button>
-              <button class="add_kid_clients action_plus" type="button">
-                <span class="visually_hidden">Добавить гостей детского возраста</span>
-              </button>
+            <div class="departure_container">
+              <div class="modal_title departure_title">Дата Выезда:</div>
+              <div class="departure_input_container">
+                <label class="modal_input_label" for="departure_input">
+                  <input class="modal_input departure_input" type="text" name="departure_input" id="departure_input"
+                    placeholder="Укажите дату">
+                  <span class="visually_hidden">Поле для ввода предполагаемой даты выезда.</span>
+                </label>
+                <span class="approve_message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
             </div>
+            <div class="clients_container">
+              <div class="modal_title adults">Взрослые:</div>
+              <div class="clients_number_input adults_input">
+                <label class="modal_input_label" for="adult_clients_input">
+                  <input class="modal_input_adding adult_clients_input" type="number" name="adult_clients_input"
+                    id="adult_clients_input" value="2">
+                  <span class="visually_hidden">Поле для ввода количества взрослых гостей.</span>
+                </label>
+                <button class="delete_adult_clients action_minus" type="button">
+                  <span class="visually_hidden">Уменьшить количество взрослых гостей</span>
+                </button>
+                <button class="add_adult_clients action_plus" type="button">
+                  <span class="visually_hidden">Добавить взрослого гостя</span>
+                </button>
+              </div>
+              <div class="modal_title kids">Дети:
+                <div class="modal_info">
+                  <button class="info_button" type="button"></button>
+                  <span class="visually_hidden">Получить дополнительную инфомрацию о размещении детей.</span>
+                </div>
+                <div class="tooltip_text">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
+                </div>
+              </div>
+              <div class="clients_number_input kids_input">
+                <label class="modal_input_label" for="kid_clients_input">
+                  <input class="modal_input_adding kid_clients_input" type="number" name="kid_clients_input"
+                    id="kid_clients_input" value="2">
+                  <span class="visually_hidden">Поле для ввода количества гостей детского возраста.</span>
+                </label>
+                <button class="delete_kid_clients action_minus" type="button">
+                  <span class="visually_hidden">Уменьшить количество гостей детского возраста</span>
+                </button>
+                <button class="add_kid_clients action_plus" type="button">
+                  <span class="visually_hidden">Добавить гостей детского возраста</span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="search_button_container">
+            <button class="search_button" type="submit">Найти</button>
+            <span class="visually_hidden">Начать поиск подходящего варианта размещения</span>
           </div>
-        </form>
-        <div class="search_button_container">
-          <button class="search_button" type="submit">Найти</button>
-          <span class="visually_hidden">Начать поиск подходящего варианта размещения</span>
         </div>
       </div>
     </div>
