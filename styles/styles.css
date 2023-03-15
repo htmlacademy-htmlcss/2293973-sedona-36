@@ -431,6 +431,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   color: rgba(255, 255, 255, 1);
+  background-size: cover;
 }
 
 .welcome_image_container {
@@ -633,6 +634,7 @@ body {
   display: flex;
   width: 1200px;
   flex-wrap: wrap;
+  margin-top: -10px;
 }
 
 .grey_box_city_service_container {
@@ -718,11 +720,11 @@ body {
 
 .about_sedona_text_second_line {
   width: 490px;
+  margin-bottom: 10px;
 }
 
 .about_sedona_title_third_line {
   width: 297px;
-
 }
 
 .about_sedona_text_third_line {
@@ -737,6 +739,7 @@ body {
   background-image: url(../images/backgrounds/subscribe.jpg);
   background-color: rgba(130, 179, 211, 1);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about_sedona_title_newsletter {
@@ -775,7 +778,7 @@ body {
   width: 684px;
 }
 
-.newsletter_input_container{
+.newsletter_input_container {
   margin-top: 54px;
 }
 
@@ -784,7 +787,7 @@ body {
   border: 3px;
   border-radius: 4px 0 0 4px;
   border-color: rgba(0, 0, 0, 0);
-  background-color:  rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 1);
   border-style: solid;
   box-sizing: border-box;
   padding-top: 11px;
@@ -796,8 +799,9 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
-  }
-
+  margin-top: -1px;
+  margin-bottom: 104px;
+}
 
 .newsletter_input:not(:placeholder-shown) {
   background-color: rgba(242, 242, 242, 1);
@@ -834,10 +838,11 @@ body {
   box-sizing: border-box;
 }
 
-.newsletter_button_container{
-  margin-top: 54px;
+.newsletter_button_container {
+  margin-top: -1px;
   margin-bottom: 104px;
 }
+
 .newsletter_button {
   display: inline-block;
   width: 232px;
@@ -853,6 +858,7 @@ body {
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
+
 }
 
 .unusual_button {
@@ -894,7 +900,7 @@ body {
   align-items: center;
   margin-bottom: 30px;
   justify-items: center;
-  margin-top: 44px;
+  margin-top: 43px;
 }
 
 .footer_social {
@@ -994,6 +1000,7 @@ body {
   background-image: url(../images/backgrounds/filter.jpg);
   background-color: rgba(130, 179, 211, 1);
   background-repeat: no-repeat;
+  background-size: cover;
   color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
@@ -1057,15 +1064,15 @@ body {
   text-decoration: none;
 }
 
-.breadcrumbs_link:hover{
+.breadcrumbs_link:hover {
   opacity: 60%;
 }
 
-.breadcrumbs_link:focus{
+.breadcrumbs_link:focus {
   opacity: 100%;
 }
 
-.breadcrumbs_link:active{
+.breadcrumbs_link:active {
   opacity: 30%;
 }
 
@@ -1950,7 +1957,7 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
-.regular_newsletter_container{
+.regular_newsletter_container {
   width: 1200px;
   display: flex;
   flex-direction: column;
@@ -1971,9 +1978,9 @@ body {
   margin-bottom: 19px;
 }
 
-.regular_newsletter_input_container{
-  display:flex;
-  margin-top: 32px;
+.regular_newsletter_input_container {
+  display: flex;
+  margin-top: 31px;
 }
 
 .first_line_title {
@@ -2075,7 +2082,11 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   display: none;
- }
+}
+
+.newsletter_form {
+  display: flex;
+}
 
 .modal_window {
   margin: auto;
@@ -2088,7 +2099,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 717px;
-  height: 576px;
+  position: relative;
 }
 
 .modal_header {
@@ -2121,13 +2132,14 @@ body {
 .arrival_input_container {
   margin-top: -12px;
   margin-left: -7px;
+  position: relative;
 }
 
 .mistake_message {
   min-width: 280px;
   color: rgba(255, 87, 87, 1);
-  left: 820px;
-  top: 364px;
+  left: 44px;
+  top: 51px;
   position: absolute;
 }
 
@@ -2264,6 +2276,7 @@ body {
   display: flex;
   margin-left: 70px;
   margin-top: 12px;
+  position: relative;
 }
 
 .departure_title {
@@ -2279,8 +2292,8 @@ body {
   position: absolute;
   min-width: 280px;
   color: rgba(0, 0, 0, 1);
-  left: 820px;
-  top: 461px;
+  left: 157px;
+  top: 39px;
 }
 
 .clients_container {
@@ -2294,6 +2307,7 @@ body {
 .adults_input {
   margin-left: 46px;
   margin-top: -13px;
+  position: relative;
 }
 
 .adult_clients_input {
@@ -2311,6 +2325,7 @@ body {
 .kids_input {
   margin-left: 82px;
   margin-top: -12px;
+  position: relative;
 }
 
 .kid_clients_input {
@@ -2328,12 +2343,13 @@ body {
 .kids {
   margin-left: 89px;
   margin-top: -1px;
+  position: relative;
 }
 
 .info_button {
   position: absolute;
-  top: 516px;
-  left: 1042px;
+  top: 0;
+  left: 43px;
   width: 26px;
   height: 26px;
   background-color: rgba(131, 179, 211, 1);
@@ -2391,8 +2407,8 @@ body {
   border-radius: 4px;
   border-style: solid;
   box-sizing: border-box;
-  left: 810px;
-  top: 518px;
+  left: 10px;
+  top: 15px;
   background-color: rgba(242, 242, 242, 1);
   background-image: url(../images/icons/minus.svg);
   background-repeat: no-repeat;
@@ -2409,8 +2425,8 @@ body {
   border-radius: 4px;
   border-style: solid;
   box-sizing: border-box;
-  left: 881px;
-  top: 518px;
+  left: 81px;
+  top: 15px;
   background-color: rgba(242, 242, 242, 1);
   background-image: url(../images/icons/plus.svg);
   background-repeat: no-repeat;
@@ -2427,8 +2443,8 @@ body {
   border-radius: 4px;
   border-style: solid;
   box-sizing: border-box;
-  left: 1139px;
-  top: 518px;
+  left: 10px;
+  top: 14px;
   background-color: rgba(242, 242, 242, 1);
   background-image: url(../images/icons/minus.svg);
   background-repeat: no-repeat;
@@ -2445,8 +2461,8 @@ body {
   border-radius: 4px;
   border-style: solid;
   box-sizing: border-box;
-  left: 1210px;
-  top: 518px;
+  left: 81px;
+  top: 14px;
   background-color: rgba(242, 242, 242, 1);
   background-image: url(../images/icons/plus.svg);
   background-repeat: no-repeat;
@@ -2664,8 +2680,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: rgba(255, 255, 255, 1);
-  left: 942px;
-  top: 557px;
+  left: -57px;
+  top: 43px;
   display: none;
 }
 
@@ -2680,8 +2696,8 @@ body {
   background-image: url(../images/icons/close.svg);
   background-repeat: no-repeat;
   background-position: center;
-  left: 1206px;
-  top: 212px;
+  left: 613px;
+  top: 63px;
   cursor: pointer;
   box-sizing: border-box;
 }
