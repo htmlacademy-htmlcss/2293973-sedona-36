@@ -12,72 +12,62 @@
   <body>
     <header class="page_header">
       <h1 class="visually_hidden">Оглавление сайта.</h1>
-      <div class="header_container">
-        <div class="logo_container">
-          <a class="logo_link" href="index.html">
-            <img class="logo_image" src="images/logo/logo.svg" alt="Логотип компании Седона." width="140" height="70">
+      <div class="logo_container">
+        <a class="logo_link">
+          <img class="logo_image" src="images/logo/logo.svg" alt="Логотип компании Седона." width="140" height="70">
+        </a>
+      </div>
+      <nav class="header_navigation">
+        <h2 class="visually_hidden">Навигация сайта</h2>
+        <a class="header_link" href="index.html">
+          Главная
+        </a>
+        <a class="header_link" href="#">
+          О Седоне
+        </a>
+        <a class="header_link catalog_element" href="catalog.html">
+          Гостиницы
+        </a>
+      </nav>
+      <div class="user_menu_container">
+        <div class="search_container">
+          <a class="user_menu_link" href="#">
+            <svg class="user_menu_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
+                fill="black" />
+            </svg>
           </a>
+          <span class="visually_hidden">Поиск.</span>
         </div>
-        <div class="navigation_container">
-          <nav class="header_navigation">
-            <h2 class="visually_hidden">Навигация сайта</h2>
-            <div class="header_link_container">
-              <a class="header_link" href="index.html">
-                Главная
-              </a>
-            </div>
-            <div class="header_link_container">
-              <a class="header_link" href="#">
-                О Седоне
-              </a>
-            </div>
-            <div class="header_link_container">
-              <a class="header_link catalog_element" href="catalog.html">
-                Гостиницы
-              </a>
-            </div>
-          </nav>
+        <div class="favorite_container">
+          <a class="user_menu_link" href="#">
+            <svg class="user_menu_icon favorite_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
+                fill="" />
+            </svg>
+            <span class="favorite_circle">12</span>
+          </a>
+          <span class="visually_hidden">Избранное.</span>
         </div>
-        <div class="user_menu_container">
-          <div class="search_container">
-            <a class="user_menu_link" href="#">
-              <svg class="user_menu_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
-                  fill="black" />
-              </svg>
-            </a>
-            <span class="visually_hidden">Поиск.</span>
-          </div>
-          <div class="favorite_container">
-            <a class="user_menu_link" href="#">
-              <svg class="user_menu_icon favorite_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
-                  fill="" />
-              </svg>
-              <span class="favorite_circle">12</span>
-            </a>
-            <span class="visually_hidden">Избранное.</span>
-          </div>
-          <div class="want_it_container">
-            <div class="user_menu_link_container">
-              <a class="want_it brown_button" href="catalog.html">Хочу сюда!</a>
-              <span class="visually_hidden">Начать поиск отеля.</span>
-            </div>
+        <div class="want_it_container">
+          <div class="user_menu_link_container">
+            <a class="want_it brown_button" href="catalog.html">Хочу сюда!</a>
+            <span class="visually_hidden">Начать поиск отеля.</span>
           </div>
         </div>
       </div>
     </header>
 
     <main class="catalog_container">
-      <h2 class="visually_hidden">Страница выбора отеля</h2>
-      <div class="catalog_filter_container">
+      <h1 class="visually_hidden">Страница выбора отеля</h1>
+      <section class="catalog_filter_container">
         <h2 class="visually_hidden">Фильтры для поиска отеля</h2>
         <div class="catalog_title_container">
-          <h1 class="white_title_1 catalog_title_1">Гостиницы Седоны</h1>
+          <h2 class="white_title_1 catalog_title_1">Гостиницы Седоны</h2>
         </div>
         <div class="breadcrumbs_container">
           <ol class="breadcrumbs_list">
@@ -199,8 +189,8 @@
             </div>
           </form>
         </div>
-      </div>
-      <div class="filter_result_options_container">
+      </section>
+      <section class="filter_result_options_container">
         <h2 class="visually_hidden">Управление результатами поиска</h2>
         <div class="filter_result_title">
           <h2 class="black_filter_result_title">Найдено Гостиниц: 38</h2>
@@ -225,8 +215,8 @@
             <span class="visually_hidden">Показать выбранные гостиницы в виде списка.</span>
           </div>
         </div>
-      </div>
-      <div class="filter_result_hotels">
+      </section>
+      <section class="filter_result_hotels">
         <h2 class="visually_hidden">Результаты поиска</h2>
         <div class="hotel_description">
           <div class="hotel_image">
@@ -333,7 +323,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="pagination_container">
         <div class="current_page">
           <a class="current_page_link">
@@ -370,7 +360,7 @@
           <span class="visually_hidden">Перейти на десятую страницу поиска.</span>
         </div>
       </div>
-      <div class="regular_newsletter_container">
+      <section class="regular_newsletter_container">
         <h2 class="visually_hidden">Новостная рассылка</h2>
         <div class="about_sedona_title_newsletter">
           <h2 class="regular_newsletter_title">Подпишитесь на рассылку</h2>
@@ -391,7 +381,7 @@
             </form>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="page_footer">
       <h2 class="visually_hidden">Нижнее меню сайта.</h2>
