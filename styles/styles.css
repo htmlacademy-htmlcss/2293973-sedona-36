@@ -52,8 +52,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.header_container {
+.page_header {
   width: 1200px;
   display: flex;
   margin: 0, auto;
@@ -78,9 +77,6 @@ body {
   flex-wrap: wrap;
 }
 
-.header_link_container {
-  padding: 20px 16px 20px 16px;
-}
 
 .user_menu_container {
   width: 268px;
@@ -132,6 +128,7 @@ body {
   align-items: center;
 }
 
+
 .header_link {
   font-family: "pt sans", sans-serif;
   font-weight: 700;
@@ -140,6 +137,7 @@ body {
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
+  padding: 20px 16px 20px 16px;
 }
 
 .header_link:hover {
@@ -177,7 +175,7 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.maim_element {
+.main_element {
   position: relative;
 }
 
@@ -449,13 +447,8 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 0
-}
-
-.about_sedona_title_first_line {
-  width: 620px;
+  padding: 0;
   text-align: center;
-  margin-bottom: -23px;
 }
 
 .title_2 {
@@ -465,10 +458,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-}
-
-.about_sedona_text_first_line {
-  width: 651px;
 }
 
 .regular_text {
@@ -538,11 +527,7 @@ body {
   line-height: 21px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-}
-
-.city_advantages_first_line_image_container {
-  width: 800px;
-  height: 100%;
+  margin-bottom: 100px;
 }
 
 .city_advantages_second_line_container {
@@ -570,6 +555,7 @@ body {
   text-align: center;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
+  position: relative;
 }
 
 .black_text {
@@ -584,7 +570,8 @@ body {
 
 .city_advantages_second_line_title_container {
   width: 175px;
-  margin-top: 1px;
+  margin-top: 111px;
+  padding-top: 6px;
 }
 
 .grey_box_advantages_description_container {
@@ -599,25 +586,12 @@ body {
   position: relative;
 }
 
-
-.grey_decoration {
-  position: relative;
-}
-
-.grey_decoration::after {
-  width: 60px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  content: "";
-  left: 58px;
-  top: 198px;
-}
-
 .city_advantages_second_line_text_container {
   width: 230px;
   margin-top: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
+  padding-top: 19px;
+  padding-bottom: 30px;
 }
 
 .city_advantages_third_line_container {
@@ -627,7 +601,8 @@ body {
 }
 
 .advantages_image {
-  height: 100%
+  width: 800px;
+  height: 100%;
 }
 
 .city_service_container {
@@ -716,11 +691,6 @@ body {
   text-align: center;
   margin-top: -4px;
   margin-bottom: -27px;
-}
-
-.about_sedona_text_second_line {
-  width: 490px;
-  margin-bottom: 10px;
 }
 
 .about_sedona_title_third_line {
@@ -1004,6 +974,7 @@ body {
   color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
+  margin-top: -1px;
 }
 
 .catalog_title_container {
@@ -1107,7 +1078,7 @@ body {
 .checkboxes,
 .radios {
   position: relative;
-  padding-left: 10px;
+  padding-left: 12px;
   cursor: pointer;
 }
 
@@ -1211,7 +1182,7 @@ body {
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  background-position: 2px;
+  background-position: center;
 }
 
 .filter_name {
@@ -1237,6 +1208,7 @@ body {
 
 .filter_item {
   margin-bottom: 16px;
+  margin-left: -1px;
 }
 
 .fieldset_container {
@@ -1985,10 +1957,13 @@ body {
 
 .first_line_title {
   margin-top: 69px;
+  width: 620px;
+  text-align: center;
+  margin-bottom: -23px;
 }
 
 .first_line_text {
-  margin-top: 22px;
+  margin-top: 47px;
   margin-bottom: 91px;
 }
 
@@ -2001,9 +1976,16 @@ body {
   margin-bottom: 102px;
 }
 
-.black_title {
-  margin-top: 112px;
+.black_title::after {
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  content: "";
+  left: 58px;
+  top: 91px;
 }
+
 
 .black_text {
   margin-bottom: 112px;
@@ -2014,10 +1996,20 @@ body {
 }
 
 .second_line_text {
-  margin-bottom: 64px;
+  width: 490px;
+  margin-top: -5px;
+  margin-bottom: 74px;
 }
 
 .service_title {
+  font-family: "pt sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
   margin-top: 183px;
 }
 
