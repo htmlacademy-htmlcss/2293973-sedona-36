@@ -52,6 +52,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .page_header {
   width: 1200px;
   display: flex;
@@ -1924,7 +1925,7 @@ body {
 .regular_newsletter_input_container {
   display: flex;
   margin-top: 108px;
- }
+}
 
 .first_line_title {
   margin-top: 69px;
@@ -2002,9 +2003,9 @@ body {
 }
 
 .newsletter_title {
-    width: 404px;
-    padding-top: 70px;
-    margin-bottom: 0;
+  width: 404px;
+  padding-top: 70px;
+  margin-bottom: 0;
 }
 
 .newsletter_text {
@@ -2042,7 +2043,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-display: none;
+  display: none;
 }
 
 .newsletter_form {
