@@ -11,7 +11,7 @@
 
   <body>
     <header class="page_header">
-      <h1 class="visually_hidden">Оглавление сайта.</h1>
+      <h2 class="visually_hidden">Оглавление сайта.</h2>
       <div class="logo_container">
         <a class="logo_link">
           <img class="logo_image" src="images/logo/logo.svg" alt="Логотип компании Седона." width="140" height="70">
@@ -30,34 +30,29 @@
         </a>
       </nav>
       <div class="user_menu_container">
-        <div class="search_container">
-          <a class="user_menu_link" href="#">
-            <svg class="user_menu_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
-                fill="black" />
-            </svg>
-          </a>
-          <span class="visually_hidden">Поиск.</span>
-        </div>
-        <div class="favorite_container">
-          <a class="user_menu_link" href="#">
-            <svg class="user_menu_icon favorite_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
-                fill="" />
-            </svg>
-            <span class="favorite_circle">12</span>
-          </a>
-          <span class="visually_hidden">Избранное.</span>
-        </div>
-        <div class="want_it_container">
-          <div class="user_menu_link_container">
-            <a class="want_it brown_button" href="catalog.html">Хочу сюда!</a>
-            <span class="visually_hidden">Начать поиск отеля.</span>
-          </div>
+        <a class="user_menu_link search_container" href="#">
+          <svg class="user_menu_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
+              fill="black" />
+          </svg>
+        </a>
+        <span class="visually_hidden">Поиск.</span>
+
+        <a class="user_menu_link favorite_container" href="#">
+          <svg class="user_menu_icon favorite_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
+              fill="" />
+          </svg>
+          <span class="favorite_circle">12</span>
+        </a>
+        <span class="visually_hidden">Избранное.</span>
+        <div class="user_menu_link_container want_it_container">
+          <a class="want_it brown_button" href="catalog.html">Хочу сюда!</a>
+          <span class="visually_hidden">Начать поиск отеля.</span>
         </div>
       </div>
     </header>
@@ -66,141 +61,124 @@
       <h1 class="visually_hidden">Страница выбора отеля</h1>
       <section class="catalog_filter_container">
         <h2 class="visually_hidden">Фильтры для поиска отеля</h2>
-        <div class="catalog_title_container">
-          <h2 class="white_title_1 catalog_title_1">Гостиницы Седоны</h2>
-        </div>
-        <div class="breadcrumbs_container">
-          <ol class="breadcrumbs_list">
-            <li class="breadcrumbs_item_1">
-              <a class="breadcrumbs_link go_home_link" href="index.html">
-              </a>
-              <span class="visually_hidden">Вернуться на главную страницу.</span>
-            </li>
-            <li class="breadcrumbs_item_2">
-              <a class="breadcrumbs_link" href="#">Гостиницы
-              </a>
-              <span class="visually_hidden">Вы находитесь в разделе "Гостиницы".</span>
-            </li>
-          </ol>
-        </div>
-        <div class="filter_options_container">
-          <form class="filter_options_form" action="#" method="get">
-            <div class="filter_infrastructure">
-              <fieldset class="fieldset_container">
-                <legend class="filter_name">Инфраструктура</legend>
-                <ul class="filter_list">
-                  <li class="filter_item">
-                    <label class="checkboxes" for="swimming_pool">
-                      <input class="visually_hidden control_input" type="checkbox" name="swimming_pool"
-                        id="swimming_pool" checked="checked">
-                      <span class="checkbox_mark"></span>
-                      <span class="filter_options_name">Бассейн</span>
-                      <span class="visually_hidden">Добавить/удалить бассейн, в качестве условия поиска.</span>
-                    </label>
-                  </li>
-                  <li class="filter_item">
-                    <label class="checkboxes" for="parking">
-                      <input class="visually_hidden control_input" type="checkbox" name="parking" id="parking"
-                        checked="checked">
-                      <span class="checkbox_mark"></span>
-                      <span class="filter_options_name">Парковка</span>
-                      <span class="visually_hidden">Добавить/удалить парковку, в качестве условия поиска.</span>
-                    </label>
-                  </li>
-                  <li class="filter_item">
-                    <label class="checkboxes" for="wifi">
-                      <input class="visually_hidden control_input" type="checkbox" name="wifi" id="wifi">
-                      <span class="checkbox_mark"></span>
-                      <span class="filter_options_name">Wi-Fi</span>
-                      <span class="visually_hidden">Добавить/удалить подключение к Wi-fi, в качестве условия
-                        поиска.</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+        <h2 class="white_title_1 catalog_title_container">Гостиницы Седоны</h2>
+        <ol class="breadcrumbs_list">
+          <li class="breadcrumbs_item_1">
+            <a class="breadcrumbs_link go_home_link" href="index.html">
+            </a>
+            <span class="visually_hidden">Вернуться на главную страницу.</span>
+          </li>
+          <li class="breadcrumbs_item_2">
+            <a class="breadcrumbs_link" href="#">Гостиницы
+            </a>
+            <span class="visually_hidden">Вы находитесь в разделе "Гостиницы".</span>
+          </li>
+        </ol>
+        <form class="filter_options_form filter_options_container" action="#" method="get">
+          <fieldset class="fieldset_container filter_infrastructure">
+            <legend class="filter_name">Инфраструктура</legend>
+            <ul class="filter_list">
+              <li class="filter_item">
+                <label class="checkboxes" for="swimming_pool">
+                  <input class="visually_hidden control_input" type="checkbox" name="swimming_pool" id="swimming_pool"
+                    checked="checked">
+                  <span class="checkbox_mark"></span>
+                  <span class="filter_options_name">Бассейн</span>
+                  <span class="visually_hidden">Добавить/удалить бассейн, в качестве условия поиска.</span>
+                </label>
+              </li>
+              <li class="filter_item">
+                <label class="checkboxes" for="parking">
+                  <input class="visually_hidden control_input" type="checkbox" name="parking" id="parking"
+                    checked="checked">
+                  <span class="checkbox_mark"></span>
+                  <span class="filter_options_name">Парковка</span>
+                  <span class="visually_hidden">Добавить/удалить парковку, в качестве условия поиска.</span>
+                </label>
+              </li>
+              <li class="filter_item">
+                <label class="checkboxes" for="wifi">
+                  <input class="visually_hidden control_input" type="checkbox" name="wifi" id="wifi">
+                  <span class="checkbox_mark"></span>
+                  <span class="filter_options_name">Wi-Fi</span>
+                  <span class="visually_hidden">Добавить/удалить подключение к Wi-fi, в качестве условия
+                    поиска.</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="fieldset_container filter_house_type">
+            <legend class="filter_name">Тип Жилья</legend>
+            <ul class="filter_list">
+              <li class="filter_item">
+                <label class="radios" for="hotel">
+                  <input class="control_input visually_hidden" type="radio" name="radio" id="hotel" checked="checked">
+                  <span class="radio_mark"></span>
+                  <span class="filter_options_name">Гостиница</span>
+                  <span class="visually_hidden">Выбрать гостиницу в качестве предпочтительного типа
+                    проживания.</span>
+                </label>
+              </li>
+              <li class="filter_item">
+                <label class="radios" for="motel">
+                  <input class="control_input visually_hidden" type="radio" name="radio" id="motel">
+                  <span class="radio_mark"></span>
+                  <span class="filter_options_name">Мотель</span>
+                  <span class="visually_hidden">Выбрать мотель в качестве предпочтительного типа проживания.</span>
+                </label>
+              </li>
+              <li class="filter_item">
+                <label class="radios" for="appartments">
+                  <input class="control_input visually_hidden" type="radio" name="radio" id="appartments">
+                  <span class="radio_mark"></span>
+                  <span class="filter_options_name">Апартаменты</span>
+                  <span class="visually_hidden">Выбрать апартаменты в качестве предпочтительного типа
+                    проживания.</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter_price_range filter_price_range_container">
+            <legend class="filter_name">Стоимость, ₽:</legend>
+            <div class="price_inputs">
+              <label class="min_price_input" for="min_price">
+                <input class="range_input min_input" type="number" name="min_price" id="min_price" value="0">
+                <span class="visually_hidden">Выбрать минимальную стоимость номера.</span>
+                <span class="input_range_text_from">от</span>
+              </label>
+              <label class="max_price_input" for="max_price">
+                <input class="range_input max_input" type="number" name="max_price" id="max_price" value="9000">
+                <span class="visually_hidden">Выбрать максимальную стоимость номера.</span>
+                <span class="input_range_text_till">до</span>
+              </label>
             </div>
-            <div class="filter_house_type">
-              <fieldset class="fieldset_container">
-                <legend class="filter_name">Тип Жилья</legend>
-                <ul class="filter_list">
-                  <li class="filter_item">
-                    <label class="radios" for="hotel">
-                      <input class="control_input visually_hidden" type="radio" name="radio" id="hotel"
-                        checked="checked">
-                      <span class="radio_mark"></span>
-                      <span class="filter_options_name">Гостиница</span>
-                      <span class="visually_hidden">Выбрать гостиницу в качестве предпочтительного типа
-                        проживания.</span>
-                    </label>
-                  </li>
-                  <li class="filter_item">
-                    <label class="radios" for="motel">
-                      <input class="control_input visually_hidden" type="radio" name="radio" id="motel">
-                      <span class="radio_mark"></span>
-                      <span class="filter_options_name">Мотель</span>
-                      <span class="visually_hidden">Выбрать мотель в качестве предпочтительного типа проживания.</span>
-                    </label>
-                  </li>
-                  <li class="filter_item">
-                    <label class="radios" for="appartments">
-                      <input class="control_input visually_hidden" type="radio" name="radio" id="appartments">
-                      <span class="radio_mark"></span>
-                      <span class="filter_options_name">Апартаменты</span>
-                      <span class="visually_hidden">Выбрать апартаменты в качестве предпочтительного типа
-                        проживания.</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="filter_price_range_container">
-              <fieldset class="filter_price_range">
-                <legend class="filter_name">Стоимость, ₽:</legend>
-                <div class="price_inputs">
-                  <label class="min_price_input" for="min_price">
-                    <input class="range_input min_input" type="number" name="min_price" id="min_price" value="0">
-                    <span class="visually_hidden">Выбрать минимальную стоимость номера.</span>
-                    <span class="input_range_text_from">от</span>
-                  </label>
-                  <label class="max_price_input" for="max_price">
-                    <input class="range_input max_input" type="number" name="max_price" id="max_price" value="9000">
-                    <span class="visually_hidden">Выбрать максимальную стоимость номера.</span>
-                    <span class="input_range_text_till">до</span>
-                  </label>
+            <div class="range">
+              <div class="range_scale">
+                <div class="range_bar">
+                  <!--Класс служит для управления заливкой на рейндже-->
+                  <button class="range_button range_min" type="button">
+                  </button>
+                  <button class="range_button range_max" type="button">
+                  </button>
                 </div>
-                <div class="range">
-                  <div class="range_scale">
-                    <div class="range_bar">
-                      <!--Класс служит для управления заливкой на рейндже-->
-                      <button class="range_button range_min" type="button">
-                      </button>
-                      <button class="range_button range_max" type="button">
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
+              </div>
             </div>
-            <div class="filter_management">
-              <button class="accept_button blue_button" type="submit">Применить</button>
-              <span class="visually_hidden">Применить выбарнные параметры поиска.</span>
-              <button class="decline_button transparent_button" type="reset">Сбросить</button>
-              <span class="visually_hidden">Сбросить выбарнные параметры поиска.</span>
-            </div>
-          </form>
-        </div>
+          </fieldset>
+          <div class="filter_management">
+            <button class="accept_button blue_button" type="submit">Применить</button>
+            <span class="visually_hidden">Применить выбарнные параметры поиска.</span>
+            <button class="decline_button transparent_button" type="reset">Сбросить</button>
+            <span class="visually_hidden">Сбросить выбарнные параметры поиска.</span>
+          </div>
+        </form>
       </section>
       <section class="filter_result_options_container">
         <h2 class="visually_hidden">Управление результатами поиска</h2>
-        <div class="filter_result_title">
-          <h2 class="black_filter_result_title">Найдено Гостиниц: 38</h2>
-        </div>
-        <div class="filter_result_sort">
-          <select class="select_control">
-            <option value="cheap">Сначала дешевые</option>
-          </select>
-          <span class="visually_hidden">Отфильтровать предложенные варианты начиная с самого дешевого.</span>
-        </div>
+        <h2 class="black_filter_result_title filter_result_title">Найдено Гостиниц: 38</h2>
+        <select class="select_control filter_result_sort">
+          <option value="cheap">Сначала дешевые</option>
+        </select>
+        <span class="visually_hidden">Отфильтровать предложенные варианты начиная с самого дешевого.</span>
         <div class="filter_result_view">
           <div class="filter_result_view_plate">
             <a class="plate_link action_view_link" href=""></a>
@@ -219,13 +197,9 @@
       <section class="filter_result_hotels">
         <h2 class="visually_hidden">Результаты поиска</h2>
         <div class="hotel_description">
-          <div class="hotel_image">
-            <img class="hotel_photo" src="images/catalog/hotel-1.jpg" alt="Звезды в конце каньона." width="300"
-              height="212">
-          </div>
-          <div class="hotel_name">
-            <p class="hotel_title">Amara Resort & Spa</p>
-          </div>
+          <img class="hotel_photo hotel_image" src="images/catalog/hotel-1.jpg" alt="Звезды в конце каньона."
+            width="300" height="212">
+          <p class="hotel_title hotel_name">Amara Resort & Spa</p>
           <div class="type_price_container">
             <p class="type_price">Гостиница</p>
             <p class="type_price">От 4000 ₽</p>
@@ -237,21 +211,15 @@
             <span class="visually_hidden">Добавить отель в избранное.</span>
           </div>
           <div class="rating_container">
-            <div class="rating_stars">
-              <img class="4stars" src="images/icons/4_stars.png" alt="Четыре звезды." width="140" height="37">
-            </div>
-            <div class="rating_number">
-              <p class="rating_score">Рейтинг: 8,5</p>
-            </div>
+            <img class="4stars rating_stars" src="images/icons/4_stars.png" alt="Четыре звезды." width="140"
+              height="37">
+            <p class="rating_score rating_number">Рейтинг: 8,5</p>
           </div>
         </div>
         <div class="hotel_description">
-          <div class="hotel_image">
-            <img class="hotel_photo" src="images/catalog/hotel-2.jpg" alt="Радуга над горами." width="300" height="212">
-          </div>
-          <div class="hotel_name">
-            <p class="hotel_title">Villas at Poco Diablo</p>
-          </div>
+          <img class="hotel_photo hotel_image" src="images/catalog/hotel-2.jpg" alt="Радуга над горами." width="300"
+            height="212">
+          <p class="hotel_title hotel_name">Villas at Poco Diablo</p>
           <div class="type_price_container">
             <p class="type_price">Гостиница</p>
             <p class="type_price">От 5000 ₽</p>
@@ -263,21 +231,15 @@
             <span class="visually_hidden">Удалить отель из избранного.</span>
           </div>
           <div class="rating_container">
-            <div class="rating_stars">
-              <img class="4stars" src="images/icons/4_stars.png" alt="Четыре звезды." width="140" height="37">
-            </div>
-            <div class="rating_number">
-              <p class="rating_score">Рейтинг: 9,2</p>
-            </div>
+            <img class="4stars rating_stars" src="images/icons/4_stars.png" alt="Четыре звезды." width="140"
+              height="37">
+            <p class="rating_score rating_number">Рейтинг: 9,2</p>
           </div>
         </div>
         <div class="hotel_description">
-          <div class="hotel_image">
-            <img class="hotel_photo" src="images/catalog/hotel-3.jpg" alt="Горы на фоне неба." width="300" height="212">
-          </div>
-          <div class="hotel_name">
-            <p class="hotel_title">Desert Quail Inn</p>
-          </div>
+          <img class="hotel_photo hotel_image" src="images/catalog/hotel-3.jpg" alt="Горы на фоне неба." width="300"
+            height="212">
+          <p class="hotel_title hotel_name">Desert Quail Inn</p>
           <div class="type_price_container">
             <p class="type_price">Гостиница</p>
             <p class="type_price">От 2500 ₽</p>
@@ -289,21 +251,14 @@
             <span class="visually_hidden">Добавить отель в избранное.</span>
           </div>
           <div class="rating_container">
-            <img class="4stars" src="images/icons/3_stars.png" alt="Три звезды." width="140" height="37">
-            <div class="rating_stars">
-            </div>
-            <div class="rating_number">
-              <p class="rating_score">Рейтинг: 6,9</p>
-            </div>
+            <img class="4stars rating_stars" src="images/icons/3_stars.png" alt="Три звезды." width="140" height="37">
+            <p class="rating_score rating_number">Рейтинг: 6,9</p>
           </div>
         </div>
         <div class="hotel_description">
-          <div class="hotel_image">
-            <img class="hotel_photo" src="images/catalog/hotel-4.jpg" alt="Звезды над горой" width="300" height="212">
-          </div>
-          <div class="hotel_name">
-            <p class="hotel_title">GreenTree Inn</p>
-          </div>
+          <img class="hotel_photo hotel_image" src="images/catalog/hotel-4.jpg" alt="Звезды над горой" width="300"
+            height="212">
+          <p class="hotel_title hotel_name">GreenTree Inn</p>
           <div class="type_price_container">
             <p class="type_price">Гостиница</p>
             <p class="type_price">От 1500 ₽</p>
@@ -315,62 +270,41 @@
             <span class="visually_hidden">Добавить отель в избранное.</span>
           </div>
           <div class="rating_container">
-            <div class="rating_stars">
-              <img class="4stars" src="images/icons/2_stars.png" alt="Две звезды." width="140" height="37">
-            </div>
-            <div class="rating_number">
-              <p class="rating_score">Рейтинг: 5,0</p>
-            </div>
+            <img class="4stars rating_stars" src="images/icons/2_stars.png" alt="Две звезды." width="140" height="37">
+            <p class="rating_score rating_number">Рейтинг: 5,0</p>
           </div>
         </div>
       </section>
       <div class="pagination_container">
-        <div class="current_page">
-          <a class="current_page_link">
-            1
-          </a>
-        </div>
-        <div class="pagination_page">
-          <a class="next_page_link" href="#">
-            2
-          </a>
-          <span class="visually_hidden">Перейти на вторую страницу поиска.</span>
-        </div>
-        <div class="pagination_page">
-          <a class="next_page_link " href="#">
-            3
-          </a>
-          <span class="visually_hidden">Перейти на третью страницу поиска.</span>
-        </div>
-        <div class="pagination_page">
-          <a class="next_page_link " href="#">
-            4
-          </a>
-          <span class="visually_hidden">Перейти на четвертую страницу поиска.</span>
-        </div>
-        <div class="pagination_more">
-          <a class="more_page_link" href="#">
-            ...
-          </a>
-        </div>
-        <div class="pagination_page">
-          <a class="next_page_link" href="#">
-            10
-          </a>
-          <span class="visually_hidden">Перейти на десятую страницу поиска.</span>
-        </div>
+        <a class="current_page current_page_link">
+          1
+        </a>
+        <a class="next_page_link pagination_page" href="#">
+          2
+        </a>
+        <span class="visually_hidden">Перейти на вторую страницу поиска.</span>
+        <a class="next_page_link pagination_page" href="#">
+          3
+        </a>
+        <span class="visually_hidden">Перейти на третью страницу поиска.</span>
+        <a class="next_page_link pagination_page" href="#">
+          4
+        </a>
+        <span class="visually_hidden">Перейти на четвертую страницу поиска.</span>
+        <a class="more_page_link pagination_more" href="#">
+          ...
+        </a>
+        <a class="next_page_link pagination_page" href="#">
+          10
+        </a>
+        <span class="visually_hidden">Перейти на десятую страницу поиска.</span>
       </div>
       <section class="regular_newsletter_container">
         <h2 class="visually_hidden">Новостная рассылка</h2>
-        <div class="about_sedona_title_newsletter">
           <h2 class="regular_newsletter_title">Подпишитесь на рассылку</h2>
-        </div>
-        <div class="about_sedona_text_newsletter">
-          <p class="regular_text">Только полезная информация и никакого спама, честное
+          <p class="regular_text about_sedona_text_newsletter">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
-        </div>
-        <div class="regular_newsletter_input_container">
-          <div class="newsletter_input_container">
+          <div class="newsletter_input_container regular_newsletter_input_container">
             <form class="newsletter_form" action="#" method="post">
               <input class="newsletter_input" type="text" name="e-mail" placeholder="Ваш e-mail">
               <span class="visually_hidden">Введите свой электронный ящик для рассылки.</span>
@@ -380,7 +314,6 @@
               </div>
             </form>
           </div>
-        </div>
       </section>
     </main>
     <footer class="page_footer">

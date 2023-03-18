@@ -484,12 +484,6 @@ body {
   align-items: center;
 }
 
-.city_advantages_title_container {
-  width: 175px;
-  text-align: center;
-  margin-top: 34px;
-  margin-bottom: -4px;
-}
 
 .blue_decoration::after {
   width: 60px;
@@ -498,7 +492,7 @@ body {
   position: absolute;
   content: "";
   left: 57px;
-  top: 88px;
+  top: 118px;
 }
 
 .white_advantages_title {
@@ -515,8 +509,8 @@ body {
 .city_advantages_text_container {
   width: 230px;
   text-align: center;
-  margin-top: 26px;
-  margin-bottom: 55x;
+  padding-top: 23px;
+  padding-bottom: -10px;
 }
 
 .white_advantages_text {
@@ -584,6 +578,10 @@ body {
 
 .blue_decoration {
   position: relative;
+  width: 175px;
+  text-align: center;
+  padding-top: 33px;
+
 }
 
 .city_advantages_second_line_text_container {
@@ -648,11 +646,6 @@ body {
   width: 230px;
 }
 
-.city_service_text_container {
-  width: 230px;
-  margin-top: -8px;
-}
-
 .pale_grey_box_city_service_container_food {
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
@@ -663,13 +656,6 @@ body {
   color: rgba(255, 255, 255, 1);
   background-repeat: no-repeat;
   background-position: top 81px right 162px;
-}
-
-.hotel_searching_link_container {
-  width: 376px;
-  text-align: center;
-  margin-top: 17px;
-  margin-bottom: 96px;
 }
 
 .hotel_searching_link {
@@ -684,6 +670,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   padding: 8px 0 8px 0;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 96px;
 }
 
 .about_sedona_title_second_line {
@@ -691,14 +680,6 @@ body {
   text-align: center;
   margin-top: -4px;
   margin-bottom: -27px;
-}
-
-.about_sedona_title_third_line {
-  width: 297px;
-}
-
-.about_sedona_text_third_line {
-  width: 592px;
 }
 
 .main_newsletter_container {
@@ -712,10 +693,6 @@ body {
   background-size: cover;
 }
 
-.about_sedona_title_newsletter {
-  width: 404px;
-  margin-bottom: -19px;
-}
 
 .white_title_2 {
   font-family: "pt sans", sans-serif;
@@ -730,7 +707,9 @@ body {
 
 .about_sedona_text_newsletter {
   width: 475px;
-  margin-bottom: -54px
+  padding-top: ;
+  margin-bottom: -54px;
+
 }
 
 .white_regular_text {
@@ -808,10 +787,6 @@ body {
   box-sizing: border-box;
 }
 
-.newsletter_button_container {
-  margin-top: -1px;
-  margin-bottom: 104px;
-}
 
 .newsletter_button {
   display: inline-block;
@@ -828,7 +803,8 @@ body {
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
-
+  margin-top: -1px;
+  margin-bottom: 104px;
 }
 
 .unusual_button {
@@ -978,6 +954,9 @@ body {
 }
 
 .catalog_title_container {
+  margin-left: 70px;
+  margin-top: 35px;
+  margin-bottom: 23px;
   width: 690px;
 }
 
@@ -990,15 +969,6 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
-.breadcrumbs_container {
-  width: 200px;
-  display: flex;
-  flex-direction: row;
-  margin-left: 70px;
-  padding: 0;
-  margin-top: -17px;
-}
-
 .breadcrumbs_list {
   width: 200px;
   display: flex;
@@ -1007,6 +977,8 @@ body {
   list-style-type: none;
   padding: 0;
   align-items: center;
+  margin-left: 70px;
+  margin-top: -17px;
 }
 
 .breadcrumbs_item_1 {
@@ -1247,7 +1219,7 @@ body {
   display: flex;
   width: 288px;
   justify-content: space-between;
-  margin-top: -7px;
+  margin-top: -5px;
 }
 
 .range_input {
@@ -1912,8 +1884,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5px;
-  margin-right: 3px;
+  text-align: center;
+  margin-left: 0;
 }
 
 .more_page_link {
@@ -1924,7 +1896,6 @@ body {
   line-height: 36px;
   text-align: center;
   text-decoration: none;
-  display: block;
   margin-right: 8px;
   color: rgba(0, 0, 0, 1);
 }
@@ -1947,13 +1918,13 @@ body {
   text-align: center;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  margin-bottom: 19px;
+  margin-bottom: 3px;
 }
 
 .regular_newsletter_input_container {
   display: flex;
-  margin-top: 31px;
-}
+  margin-top: 108px;
+ }
 
 .first_line_title {
   margin-top: 69px;
@@ -2010,11 +1981,14 @@ body {
   text-align: center;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  margin-top: 183px;
+  padding-top: 166px;
+  padding-bottom: 15px;
 }
 
 .service_text {
   margin-bottom: 81px;
+  width: 230px;
+  margin-top: -5px;
 }
 
 .third_line_title {
@@ -2028,19 +2002,14 @@ body {
 }
 
 .newsletter_title {
-  margin-top: 96px;
-  margin-bottom: 20px;
+    width: 404px;
+    padding-top: 70px;
+    margin-bottom: 0;
 }
 
 .newsletter_text {
-  margin-top: 20px;
-  margin-bottom: 54px;
-}
-
-.catalog_title_1 {
-  margin-left: 70px;
-  margin-top: 35px;
-  margin-bottom: 8px;
+  width: 475px;
+  margin-bottom: 2px;
 }
 
 .social_svg {
@@ -2073,7 +2042,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
+display: none;
 }
 
 .newsletter_form {

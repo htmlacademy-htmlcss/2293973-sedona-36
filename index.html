@@ -30,19 +30,17 @@
         </a>
       </nav>
       <div class="user_menu_container">
-        <div class="search_container">
-          <a class="user_menu_link" href="#">
-            <svg class="user_menu_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
-                fill="black" />
-            </svg>
-          </a>
-          <span class="visually_hidden">Поиск.</span>
-        </div>
-        <div class="favorite_container">
-          <a class="user_menu_link" href="#">
+        <a class="user_menu_link search_container" href="#">
+          <svg class="user_menu_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
+              fill="black" />
+          </svg>
+        </a>
+        <span class="visually_hidden">Поиск.</span>
+
+          <a class="user_menu_link favorite_container" href="#">
             <svg class="user_menu_icon favorite_icon" width="18" height="17" viewBox="0 0 18 18" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -52,22 +50,17 @@
             <span class="favorite_circle">12</span>
           </a>
           <span class="visually_hidden">Избранное.</span>
-        </div>
-        <div class="want_it_container">
-          <div class="user_menu_link_container">
+          <div class="user_menu_link_container want_it_container">
             <a class="want_it brown_button" href="catalog.html">Хочу сюда!</a>
             <span class="visually_hidden">Начать поиск отеля.</span>
-          </div>
         </div>
       </div>
     </header>
     <main class="main_container">
       <h2 class="visually_hidden">Главная страница сайта</h2>
-      <div class="background_image_container">
-        <div class="welcome_image_container">
+      <div class="background_image_container welcome_image_container">
           <img class="welcome_image" src="images/design_features/welcome.png"
             alt="Добро пожаловать в прекарсную Седону. Потому что Гранд каньон - отстой." width="458" height="352">
-        </div>
       </div>
       <section class="about_sedona_container">
         <h2 class="visually_hidden">Описание города</h2>
@@ -78,12 +71,9 @@
         <div class="city_advantages_first_line_container">
           <h2 class="visually_hidden">Первый список преимуществ города</h2>
           <div class="blue_box_advantages_description_container">
-            <div class="city_advantages_title_container">
-              <h2 class="white_advantages_title blue_decoration">Настоящий городок</h2>
-            </div>
-            <div class="city_advantages_text_container">
-              <p class="white_advantages_text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
+            <h2 class="white_advantages_title blue_decoration">Настоящий городок</h2>
+            <p class="white_advantages_text city_advantages_text_container">Седона — не аттракцион для туристов, там
+              течёт своя жизнь</p>
           </div>
           <img class="advantages_image" src="images/gallery/photo-1.jpg" alt="Пейзаж города с высоты второго этажа."
             width="800" height="385">
@@ -107,16 +97,13 @@
           </div>
         </div>
         <div class="city_advantages_third_line_container">
-            <h2 class="visually_hidden">третий список преимуществ города</h2>
-            <img class="advantages_image" src="images/gallery/photo-2.jpg" alt="Пейзаж города с высоты второго этажа."
-              width="800" height="385">
+          <h2 class="visually_hidden">третий список преимуществ города</h2>
+          <img class="advantages_image" src="images/gallery/photo-2.jpg" alt="Пейзаж города с высоты второго этажа."
+            width="800" height="385">
           <div class="blue_box_advantages_description_container">
-            <div class="city_advantages_title_container">
-              <h2 class="white_advantages_title blue_decoration">Там есть <br> мост Дьявола</h2>
-            </div>
-            <div class="city_advantages_text_container">
-              <p class="white_advantages_text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
+            <h2 class="white_advantages_title blue_decoration">Там есть <br> мост Дьявола</h2>
+            <p class="white_advantages_text city_advantages_text_container">Да, по нему можно пройти! Если вы
+              осмелитесь, разумеется</p>
           </div>
         </div>
       </section>
@@ -128,66 +115,40 @@
       <section class="city_service_container">
         <h2 class="visually_hidden">Список предоставляемых услуг</h2>
         <div class="grey_box_city_service_container_house">
-          <div class="city_service_title_container">
-            <h2 class="service_title">жильё</h2>
-          </div>
-          <div class="city_service_text_container">
-            <p class="black_text service_text">Рекомендуем пожить <br>в настоящем мотеле,<br> всё как в кино!</p>
-          </div>
+          <h2 class="service_title city_service_title_container">жильё</h2>
+          <p class="black_text service_text">Рекомендуем пожить <br>в настоящем мотеле,<br> всё как в кино!</p>
         </div>
         <div class="pale_grey_box_city_service_container_food">
-          <div class="city_service_title_container">
-            <h2 class="service_title">еда</h2>
-          </div>
-          <div class="city_service_text_container">
-            <p class="black_text service_text">Всегда заказывайте<br> топовый фирменный бургер, <br> вы не
-              разочаруетесь!</p>
-          </div>
+          <h2 class="service_title city_service_title_container">еда</h2>
+          <p class="black_text service_text">Всегда заказывайте<br> топовый фирменный бургер, <br> вы не
+            разочаруетесь!</p>
         </div>
         <div class="grey_box_city_service_container_gift">
-          <div class="city_service_title_container">
-            <h2 class="service_title">Сувениры</h2>
-          </div>
-          <div class="city_service_text_container">
-            <p class="black_text service_text">Не только китайского, <br>но и настоящего местного производства!</p>
-          </div>
+          <h2 class="service_title city_service_title_container">Сувениры</h2>
+          <p class="black_text service_text">Не только китайского, <br>но и настоящего местного производства!</p>
         </div>
       </section>
       <div class="about_sedona_container">
         <h2 class="visually_hidden">Поиск гостиницы</h2>
-        <div class="about_sedona_title_third_line">
-          <h2 class="title_2 third_line_title">Заинтересовались?</h2>
-        </div>
-        <div class="about_sedona_text_third_line">
-          <p class="regular_text third_line_text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие
-            предложения гостиниц в
-            Седоне</p>
-        </div>
-        <div class="hotel_searching_link_container">
-          <a class="hotel_searching_link brown_button" href="#">Поиск гостиницы в Седоне</a>
-          <span class="visually_hidden">Начать поиск гостиницы.</span>
-        </div>
+        <h2 class="title_2 third_line_title">Заинтересовались?</h2>
+        <p class="regular_text third_line_text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие
+          предложения гостиниц в
+          Седоне</p>
+        <a class="hotel_searching_link brown_button" href="#">Поиск гостиницы в Седоне</a>
+        <span class="visually_hidden">Начать поиск гостиницы.</span>
       </div>
       <section class="main_newsletter_container">
         <h2 class="visually_hidden">Новостная рассылка</h2>
-        <div class="about_sedona_title_newsletter">
-          <h2 class="white_title_2 newsletter_title">Подпишитесь на рассылку</h2>
-        </div>
-        <div class="about_sedona_text_newsletter">
-          <p class="white_regular_text newsletter_text">Только полезная информация и никакого спама, честное
-            бойскаутское!</p>
-        </div>
+        <h2 class="white_title_2 newsletter_title">Подпишитесь на рассылку</h2>
+        <p class="white_regular_text newsletter_text">Только полезная информация и никакого спама, честное
+          бойскаутское!</p>
         <div class="newsletter_container">
-          <div class="newsletter_input_container">
-            <form class="newsletter_form" action="#" method="post">
-              <input class="newsletter_input" type="text" name="e-mail" placeholder="Ваш e-mail">
-              <span class="visually_hidden">Введите свой электронный ящик для рассылки.</span>
-              <div class="newsletter_button_container">
-                <button class="newsletter_button unusual_button" type="submit">Подписаться</button>
-                <span class="visually_hidden">Подписаться на рассылку.</span>
-              </div>
-            </form>
-          </div>
+          <form class="newsletter_form newsletter_input_container" action="#" method="post">
+            <input class="newsletter_input" type="text" name="e-mail" placeholder="Ваш e-mail">
+            <span class="visually_hidden">Введите свой электронный ящик для рассылки.</span>
+              <button class="newsletter_button unusual_button" type="submit">Подписаться</button>
+              <span class="visually_hidden">Подписаться на рассылку.</span>
+          </form>
         </div>
       </section>
     </main>
