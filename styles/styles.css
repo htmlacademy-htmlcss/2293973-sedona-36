@@ -78,7 +78,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .user_menu_container {
   width: 268px;
   display: flex;
@@ -128,7 +127,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 .header_link {
   font-family: "pt sans", sans-serif;
@@ -185,7 +183,7 @@ body {
   width: 68px;
   height: 2px;
   background-color: rgba(117, 98, 87, 1);
-  top: 62px;
+  top: 63px;
   content: "";
 }
 
@@ -511,7 +509,7 @@ body {
   width: 230px;
   text-align: center;
   padding-top: 23px;
-  padding-bottom: -10px;
+  padding-bottom: 1px;
 }
 
 .white_advantages_text {
@@ -566,7 +564,7 @@ body {
 .city_advantages_second_line_title_container {
   width: 175px;
   margin-top: 111px;
-  padding-top: 6px;
+  padding-top: 7px;
 }
 
 .grey_box_advantages_description_container {
@@ -581,16 +579,16 @@ body {
   position: relative;
   width: 175px;
   text-align: center;
-  padding-top: 33px;
+  padding-top: 32px;
 
 }
 
 .city_advantages_second_line_text_container {
   width: 230px;
-  margin-top: 24px;
+  margin-top: 20px;
   margin-bottom: 40px;
-  padding-top: 19px;
-  padding-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 33px;
 }
 
 .city_advantages_third_line_container {
@@ -1965,11 +1963,12 @@ body {
 
 .second_line_title {
   margin-top: 64px;
+  margin-bottom: 26px;
 }
 
 .second_line_text {
   width: 490px;
-  margin-top: -5px;
+  margin-top: -4px;
   margin-bottom: 74px;
 }
 
@@ -1982,8 +1981,8 @@ body {
   text-align: center;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  padding-top: 166px;
-  padding-bottom: 15px;
+  padding-top: 158px;
+  padding-bottom: 9px;
 }
 
 .service_text {
@@ -2043,7 +2042,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
+  display:none;
 }
 
 .newsletter_form {
